@@ -306,14 +306,14 @@ p#id-selector-2 {
 }
 
 .gradients-linear {
-    background: linear-gradient(yellow, red);
+    background: linear-gradient(#e7e749, #1939e0);
     width: 200px;
     height: 200px;
 }
 
 
 .gradients-radial {
-    background: radial-gradient(yellow, green);
+    background: radial-gradient(#728bcc, #ae27d5);
     width: 200px;
     height: 200px;
 }
@@ -331,3 +331,210 @@ p#id-selector-2 {
     background-color: blue;
     color: white;
 }
+
+.gradients-positioned {
+    background: radial-gradient(
+            at top left, #6969b2, #36ce74);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: #d9a9a9;
+    color: #9da9e3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 50%;
+        margin-left: 100%;
+        width: 150px;
+        height: 150px;
+        background-color: #a6a65c;
+        color: #ee6363;
+    }
+    30% {
+        position: relative;
+        top: -50px;
+        font-size: 200%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: #1919e8;
+        color: #da5b5b;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: #57bb65;
+        color: #b07474;
+    }
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-box-1 {
+    background-color: #e5e139;
+}
+
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+.flex-container-1 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+
+
+.flex-container-2 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container-3 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: end;
+}
+
+.flex-container-4 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container-5 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.flex-container-6 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-container-7 {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+}
+
+.flex-container-7 > .flex-box {
+    flex-basis: 100%;
+}
+
+
+@media (min-width: 0px)
+and (max-width: 600px) {
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+}
+
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    .media-query {
+        background-color: #e7e7c2;
+        color: black;
+    }
+}
+
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    .media-query {
+        background-color: #8e8ed7;
+        color: white;
+    }
+}
+
+@media (min-width: 1800px) {
+    .media-query {
+        background-color: #b7eed0;
+        color: white;
+    }
+}
+
+
+@media (min-width: 0px)
+and (max-width: 500px) {
+    .media-query-2 {
+        color: #cb3333;
+    }
+}
+
+@media (min-width: 50px)
+and (max-width: 1000px) {
+    .media-query-2 {
+        color: #19e0a4;
+}
+}
+
+@media (min-width: 1000px)
+and (max-width: 1500px) {
+    .media-query-2 {
+        color: #0d29e5;
+    }
+}
+
+@media (min-width: 1500px) {
+    .media-query-2 {
+        color: #ef7e0d;
+    }
+}
+
+
