@@ -1,0 +1,143 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.wd-container {
+    width: 600px;
+}
+
+.wd-image-box {
+    padding-right: 12px;
+    overflow: hidden;
+}
+
+.wd-sub-container-a {
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    color: white;
+    padding: 12px 16px;
+}
+
+.wd-title-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-title-username {
+    font-size: 13px;
+    color: rgb(111, 120, 128);
+}
+
+.wd-three-dots-large {
+    position: absolute;
+    right: 20px;
+    top: 24px;
+}
+
+.wd-detail-tuit {
+    width: 100%;
+}
+
+.wd-sub-container-b {
+    display: flex;
+    border-color: rgb(47, 51, 54);
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    padding: 12px 16px;
+}
+
+.wd-sub-container-b2 {
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    overflow: hidden;
+    width: 504px;
+    margin-top: 12px;
+}
+
+.wd-small-image {
+    border-radius: 24px;
+    height: 48px;
+    width: 48px
+}
+
+.wd-large-image {
+    object-fit: cover;
+}
+
+.wd-sub-box-b {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.wd-three-dots {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    max-width: 506px;
+}
+
+.wd-username-text {
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+}
+
+.wd-userhandle-text {
+    font-size: 15px;
+    color: rgb(111, 120, 128);
+}
+
+.wd-message-body {
+    font-size: 15px;
+    color: white;
+    margin-right: 16px;
+    margin-top: 4px;
+}
+
+.wd-image-title-box {
+    padding: 12px;
+    border-width: 1px 0 0 0;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+}
+
+.wd-image-title-text {
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.wd-image-title-text-gray {
+    margin-bottom: 2px;
+    font-size: 15px;
+    color: rgb(111, 120, 128);
+}
+
+.wd-counter-text {
+    color: rgb(111, 120, 128);
+    margin-left: 12px;
+}
+
+.wd-counter-svg-box {
+    padding-right: 12px;
+}
+
+.wd-counter-box {
+    display: flex;
+    padding: 12px;
+    flex: 1;
+    align-items: center
+}
+
+.wd-counter-container {
+    display: flex;
+    justify-content: space-between;
+}
