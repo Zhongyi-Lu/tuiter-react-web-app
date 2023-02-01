@@ -1,3 +1,5 @@
+/*TODO: remove unused class*/
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
@@ -6,38 +8,75 @@ body {
     max-width: 550px;
 }
 
+.wd-container-border {
+    /*border-style: solid;*/
+    /*border-width: 1px 1px 1px 1px;*/
+    /*border-color: rgba(101, 101, 101, 0.65);*/
+}
+
+.wd-right-container-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.wd-font-weight-bold {
+    font-weight: bold;
+}
+
+.wd-right-container-follow-button {
+    width: 80px;
+    height: 36px;
+    border-radius: 16px;
+    background-color: #0c6dfd;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 36px;
+}
+
+.wd-tweet-button {
+    background-color: #0c6dfd;
+    color: white;
+    border-width: 0;
+    width: 100%;
+    height: 36px;
+    border-radius: 16px;
+}
+
+
 .wd-search-and-navigation-bar-box {
     /*border: 1px solid #656565;*/
-    border-style: solid;
+    /*border-style: solid;*/
     border-width: 1px 1px 3px 1px;
     border-color: rgba(101, 101, 101, 0.65);
-    padding: 0px 8px;
     width: 100%;
 }
 
 .wd-search-bar {
     display: flex;
     align-items: center;
-    padding: 8px;
 }
 
 .wd-search-box {
     border-radius: 16px;
-    background-color: #212327;
     width: 100%;
     display: flex;
     align-items: center;
     height: 40px;
+    border-color: rgba(101, 101, 101, 0.65);
+    border-width: 1px;
+    border-style: solid;
 }
 
 .wd-search-input {
-    background-color: #212327;
     color: #4b5157;
     height: 80%;
     width: 85%;
     border-color: rgba(0, 0, 0, 0);
     outline: none;
     font-size: 14px;
+    font-weight: bolder;
 }
 
 
@@ -52,25 +91,21 @@ body {
 }
 
 .wd-setting-button {
-    margin: 12px 12px 12px 32px;
-    height: 20px;
-    width: 20px;
+    margin: 12px 12px 12px 12px;
 }
 
 .wd-background {
-    background-color: black;
-    color: white;
     margin: 16px;
+    min-width: 540px;
 }
 
 .wd-flex-container {
     border-width: 5px;
-    border-color: black;
+    border-color: white;
     border-style: solid;
     display: flex;
     justify-content: space-around;
     padding: 0 6px;
-    height: 32px;
 }
 
 .wd-sub-box-b {
@@ -96,29 +131,40 @@ body {
     border-style: solid;
     padding: 0 8px;
     width: 100%;
-    background-color: rgb(22, 24, 29);
+}
+
+.wd-large-picture-container {
+    position: relative;
+}
+
+.wd-large-picture-title {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
 }
 
 .wd-flex-box-selected {
-    color: rgb(29, 161, 242);
-    border-bottom: 4px solid rgb(29, 161, 242);
+    /*color: rgb(29, 161, 242);*/
+    /*border-bottom: 4px solid rgb(29, 161, 242);*/
     height: 100%;
 }
 
 .wd-dark-text {
     color: rgb(110, 118, 125);
-    font-size: 13px;
-    margin: 6px;
-}
-
-.wd-white-text {
-    color: white;
     font-size: 16px;
-    margin: 6px;
 }
 
-.wd-white-text-small {
-    color: white;
+.wd-black-text {
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.wd-gray-text-small {
+    color: rgb(110, 118, 125);
     font-size: 13px;
 }
 
@@ -165,7 +211,7 @@ body {
 .wd-suggestion-box-d {
     width: 100%;
     border-width: 0 1px 1px 1px;
-    border-color: rgba(101, 101, 101, 0.65);
+    border-color: #dfdfdf;
     border-style: solid;
     padding: 8px;
     display: flex;
@@ -173,6 +219,11 @@ body {
 
 .wd-mixed-test {
     margin: 6px;
+}
+
+.wd-creator-text {
+    font-weight: bolder;
+    font-size: 16px;
 }
 
 .wd-suggestion-box-e {
