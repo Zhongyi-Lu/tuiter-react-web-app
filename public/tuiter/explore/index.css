@@ -1,5 +1,5 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .wd-container {
@@ -31,12 +31,12 @@ body {
 
 .wd-search-input {
     background-color: #212327;
-    color: #4b5157;
+    color: #6d767d;
     height: 80%;
     width: 85%;
     border-color: rgba(0, 0, 0, 0);
     outline: none;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 
@@ -119,6 +119,7 @@ body {
     color: white;
     font-size: 16px;
     margin-left: 6px;
+    font-weight: bold;
 }
 
 .wd-white-text-small {
@@ -184,7 +185,7 @@ body {
 .wd-author-icon-picture {
     height: 16px;
     width: 16px;
-    margin-right: 8px;
+    margin-right: 4px;
     border-radius: 8px;
 }
 
@@ -192,7 +193,7 @@ body {
     height: 16px;
     width: 16px;
     border-radius: 8px;
-    margin-left: 8px;
+    margin-left: 4px;
 }
 
 .wd-suggestion-box-e {
