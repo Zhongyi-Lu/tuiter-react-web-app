@@ -31,6 +31,11 @@ body {
     z-index: 1100;
 }
 
+.wd-who-to-follow-sub-container{
+    align-items: center;
+    display: flex;
+}
+
 .wd-right-container-follow-button {
     width: 80px;
     height: 36px;
@@ -93,10 +98,6 @@ body {
 }
 
 
-.wd-setting-button {
-    margin: 12px 12px 12px 12px;
-}
-
 .wd-background {
     margin: 16px;
     min-width: 540px;
@@ -151,7 +152,6 @@ body {
 }
 
 .wd-flex-box-image {
-    padding: 12px 16px;
     border-radius: 12px;
 }
 
@@ -160,14 +160,8 @@ body {
     border-width: 0 1px 1px 1px;
     border-color: #dfdfdf;
     border-style: solid;
-    padding: 8px;
     display: flex;
 }
-
-.wd-mixed-test {
-    margin: 6px;
-}
-
 
 .wd-text-box {
     flex: 1;
