@@ -18,26 +18,26 @@
 
         <div class="list-group">
             <div class="list-group-item">
-<!--                TODO: not use `row` here-->
-                <div class="row">
-                    <div class="col-xl-2 col-md-12">
+                <!--                TODO: not use `row` here-->
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
                         <i class="fa-brands fa-twitter"></i>
                     </div>
                 </div>
             </div>
 
             <div class="list-group-item">
-                <div class="row">
-                    <div class="col-xl-2 col-md-12">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
                         <i class="fa-solid fa-house-chimney"></i>
                     </div>
-                    <div class="col-xl-10 d-none d-xl-block">Home</div>
+                    <div class="d-none d-xl-block">Home</div>
                 </div>
             </div>
 
             <div class="list-group-item active">
-                <div class="row">
-                    <div class="col-xl-2 col-md-12">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
                         <i class="fa-solid fa-hashtag"></i>
                     </div>
                     <div class="col-xl-1 d-none d-xl-block">Explore</div>
@@ -45,8 +45,8 @@
             </div>
 
             <div class="list-group-item">
-                <div class="row">
-                    <div class="col-xl-2 col-md-12">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
                         <i class="fa-solid fa-bell"></i>
                     </div>
                     <div class="col-xl-1 d-none d-xl-block">Notifications</div>
@@ -54,8 +54,8 @@
             </div>
 
             <div class="list-group-item">
-                <div class="row">
-                    <div class="col-xl-2 col-md-12">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                     <div class="col-xl-1 d-none d-xl-block">Messages</div>
@@ -63,8 +63,8 @@
             </div>
 
             <div class="list-group-item">
-                <div class="row">
-                    <div class="col-xl-2 col-md-12">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
                         <i class="fa-solid fa-bookmark"></i>
                     </div>
                     <div class="col-xl-1 d-none d-xl-block">Bookmarks</div>
@@ -72,8 +72,8 @@
             </div>
 
             <div class="list-group-item">
-                <div class="row">
-                    <div class="col-xl-2 col-md-12">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
                         <i class="fa-solid fa-list"></i>
                     </div>
                     <div class="col-xl-1 d-none d-xl-block">Lists</div>
@@ -81,8 +81,8 @@
             </div>
 
             <div class="list-group-item">
-                <div class="row">
-                    <div class="col-xl-2 col-md-12">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <div class="col-xl-1 d-none d-xl-block">Profile</div>
@@ -90,8 +90,8 @@
             </div>
 
             <div class="list-group-item">
-                <div class="row">
-                    <div class="col-xl-2 col-md-12">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
                         <i class="fa-solid fa-ellipsis"></i>
                     </div>
                     <div class="col-xl-1 d-none d-xl-block">More</div>
@@ -148,31 +148,25 @@
                 </div>
             </div>
 
-            <div class="wd-flex-container">
-                <div class="wd-flex-box">
-                    <div class="wd-flex-box-selected">For you</div>
-                </div>
-                <div class="wd-flex-box">Trending</div>
-                <div class="wd-flex-box">News</div>
-                <div class="wd-flex-box">Sports</div>
-                <div class="wd-flex-box">Entertainment</div>
-
+            <div class="wd-tabs-container">
+                <ul class="nav nav-tabs ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entertainment</a>
+                    </li>
+                </ul>
             </div>
-
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
         </div>
 
 
@@ -316,7 +310,7 @@
             ">
             <div class="d-flex">
                 <img src="images/java.png" class="wd-right-container-icon">
-                <div class="justify-content-between ms-1">
+                <div class="justify-content-between ms-2">
                     <div class="wd-font-weight-bold">Java
                         <i class="fa-solid fa-circle-check"></i></div>
                     <div>@Java</div>
@@ -331,13 +325,12 @@
         <div class="list-group-item">
             <div class="d-flex align-items-center">
                 <img src="images/relativity.jpg" class="wd-right-container-icon">
-                <div class="justify-content-between ms-1">
-                    <div class="wd-font-weight-bold">Relativity Space
+                <div class="justify-content-between ms-2">
+                    <div class="text-nowrap wd-font-weight-bold">Relativity Space
                         <i class="fa-solid fa-circle-check"></i></div>
                     <div>@relativityspace</div>
                 </div>
-                <div class=" ms-auto w-25 wd-right-container-follow-button
-                    ">
+                <div class="ms-auto w-25 wd-right-container-follow-button">
                     Follow
                 </div>
             </div>
@@ -346,7 +339,7 @@
         <div class="list-group-item">
             <div class="d-flex">
                 <img src="images/galactic.jpg" class="wd-right-container-icon">
-                <div class="justify-content-between ms-1">
+                <div class="justify-content-between ms-2">
                     <div class="wd-font-weight-bold">Virgin Galactic
                         <i class="fa-solid fa-circle-check"></i></div>
                     <div>@virgingalactic</div>
@@ -361,7 +354,7 @@
         <div class="list-group-item">
             <div class="d-flex">
                 <img src="images/nasa.jpg" class="wd-right-container-icon">
-                <div class="justify-content-between ms-1">
+                <div class="justify-content-between ms-2">
                     <div class="wd-font-weight-bold">NASA
                         <i class="fa-solid fa-circle-check"></i></div>
                     <div>@NASA</div>
@@ -376,7 +369,7 @@
         <div class="list-group-item">
             <div class="d-flex">
                 <img src="images/tesla.png" class="wd-right-container-icon">
-                <div class="justify-content-between ms-1">
+                <div class="justify-content-between ms-2">
                     <div class="wd-font-weight-bold">Tesla
                         <i class="fa-solid fa-circle-check"></i></div>
                     <div>@Tesla</div>
