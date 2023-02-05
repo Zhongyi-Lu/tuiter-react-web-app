@@ -78,6 +78,7 @@ body {
     border-color: #d6dbe0;
     border-width: 1px;
     border-style: solid;
+    background-color: #eff3f4;
 }
 
 .wd-search-input {
@@ -86,8 +87,9 @@ body {
     width: 85%;
     border-color: rgba(0, 0, 0, 0);
     outline: none;
-    font-size: 14px;
-    font-weight: bolder;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #eff3f4;
 }
 
 
