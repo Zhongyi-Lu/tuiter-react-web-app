@@ -14,8 +14,8 @@ body {
 }
 
 .wd-left-panel-icon {
-    height: 16px;
-    width: 16px;
+    /*height: 16px;*/
+    /*width: 16px;*/
     margin-right: 12px;
 }
 
@@ -23,6 +23,12 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 24px;
+}
+
+.wd-middle-panel-container {
+    border-width: 0px 1px 0px 1px;
+    border-color: #f5f8f8;
+    border-style: solid;
 }
 
 .wd-font-weight-bold {
@@ -75,9 +81,6 @@ body {
     display: flex;
     align-items: center;
     height: 40px;
-    border-color: #d6dbe0;
-    border-width: 1px;
-    border-style: solid;
     background-color: #eff3f4;
 }
 
@@ -170,16 +173,13 @@ body {
 
 .wd-suggestion-box-d {
     width: 100%;
-    /*border-width: 0 1px 1px 1px;*/
-    /*border-color: #dfdfdf;*/
-    /*border-style: solid;*/
     display: flex;
     position: relative;
 }
 
-.wd-suggestion-container{
-    border-width: 0 1px 1px 1px;
-    border-color: #dfdfdf;
+.wd-suggestion-container {
+    border-width: 1px 0px 0px 0px;
+    border-color: #f5f8f8;
     border-style: solid;
 }
 
@@ -196,8 +196,7 @@ body {
     color: rgb(110, 118, 125);
     font-weight: 600;
     font-size: 15px;
-    padding: 12px;
-    /*width: 100px;*/
+    padding-top: 12px;
     height: 100%;
     text-align: center;
 }
@@ -205,7 +204,7 @@ body {
 .wd-flex-box-selected {
     /*color: rgb(29, 161, 242);*/
     border-bottom: 4px solid rgb(29, 161, 242);
-
+    padding-bottom: 8px;
 
 }
 
