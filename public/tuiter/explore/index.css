@@ -31,7 +31,7 @@ body {
     z-index: 1100;
 }
 
-.wd-who-to-follow-sub-container{
+.wd-who-to-follow-sub-container {
     align-items: center;
     display: flex;
 }
@@ -119,7 +119,6 @@ body {
 .wd-tabs-container {
     border-width: 0 0px 1px 0px;
     border-color: #e8eaed;
-    margin-bottom: 8px;
 }
 
 .wd-large-picture-container {
@@ -131,14 +130,26 @@ body {
     font-size: 28px;
     font-weight: bold;
     position: absolute;
-    left: 8px;
-    bottom: 8px;
+    left: 16px;
+    bottom: 16px;
 }
 
 .wd-dark-text {
     color: rgb(110, 118, 125);
     font-size: 16px;
 }
+
+.wd-dark-text-bolder {
+    color: rgb(110, 118, 125);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wd-link-text {
+    color: #0eb5f0;
+    font-weight: 500;
+}
+
 
 .wd-black-text {
     color: black;
@@ -159,12 +170,52 @@ body {
 
 .wd-suggestion-box-d {
     width: 100%;
+    /*border-width: 0 1px 1px 1px;*/
+    /*border-color: #dfdfdf;*/
+    /*border-style: solid;*/
+    display: flex;
+    position: relative;
+}
+
+.wd-suggestion-container{
     border-width: 0 1px 1px 1px;
     border-color: #dfdfdf;
     border-style: solid;
-    display: flex;
 }
 
 .wd-text-box {
     flex: 1;
+}
+
+.wd-flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wd-flex-box {
+    color: rgb(110, 118, 125);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px;
+    /*width: 100px;*/
+    height: 100%;
+    text-align: center;
+}
+
+.wd-flex-box-selected {
+    /*color: rgb(29, 161, 242);*/
+    border-bottom: 4px solid rgb(29, 161, 242);
+
+
+}
+
+.wd-flex-text-selected {
+    font-weight: 700;
+    font-size: 15px;
+    color: #0f151a;
+}
+
+.wd-large-picture-title-small-text {
+    font-size: 16px;
+    font-weight: 400;
 }
