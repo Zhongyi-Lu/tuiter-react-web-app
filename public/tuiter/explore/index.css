@@ -7,16 +7,22 @@ body {
     max-width: 550px;
 }
 
+.wd-left-panel-active{
+    font-weight: 700;
+}
 
 .wd-left-panel-container {
     display: flex;
-    height: 24px;
+    align-items: center;
 }
 
 .wd-left-panel-icon {
-    /*height: 16px;*/
-    /*width: 16px;*/
     margin-right: 12px;
+    width: 24px;
+}
+
+.wd-left-panel-text{
+    font-size: 20px;
 }
 
 .wd-right-container-icon {
