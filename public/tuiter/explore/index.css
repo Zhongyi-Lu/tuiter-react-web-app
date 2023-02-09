@@ -160,6 +160,8 @@ body {
     margin: 16px;
     min-width: 576px;
     overflow: scroll;
+    display: flex;
+    justify-content: center;
 }
 
 
