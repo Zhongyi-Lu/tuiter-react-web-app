@@ -31,7 +31,7 @@ body {
     z-index: 1100;
 }
 
-.wd-who-to-follow-sub-container{
+.wd-who-to-follow-sub-container {
     align-items: center;
     display: flex;
 }
@@ -102,6 +102,8 @@ body {
     margin: 16px;
     min-width: 576px;
     overflow: scroll;
+    display: flex;
+    justify-content: center;
 }
 
 .wd-sub-box-b {
