@@ -11,6 +11,7 @@ body {
 .wd-left-panel-container {
     display: flex;
     height: 24px;
+    font-weight: 600;
 }
 
 .wd-navigation-link{
@@ -21,7 +22,7 @@ body {
 .wd-left-panel-icon {
     height: 16px;
     width: 16px;
-    margin-right: 12px;
+    margin-right: 4px;
 }
 
 .wd-right-container-icon {
