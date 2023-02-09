@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Explore</title>
+    <link href="index.css"
+          rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          rel="stylesheet"/>
+</head>
+<body class="wd-background">
+
+<div class="container row">
+    <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2">
+
+        <div class="list-group">
+            <div class="list-group-item border-0 mb-2">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
+                        <i class="fa-solid fa-t fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group-item border-0 mb-2">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
+                        <i class="fa-solid fa-home fa-lg"></i>
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block wd-left-panel-text">Home</div>
+                </div>
+            </div>
+
+            <div class="list-group-item border-0 mb-2 wd-left-panel-active">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
+                        <i class="fa-solid fa-hashtag  fa-lg"></i>
+
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block wd-left-panel-text">Explore</div>
+                </div>
+            </div>
+
+            <div class="list-group-item border-0 mb-2">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block wd-left-panel-text">Notifications</div>
+                </div>
+            </div>
+
+            <div class="list-group-item border-0 mb-2">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
+                        <i class="fa-regular fa-envelope fa-lg"></i>
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block wd-left-panel-text">Messages</div>
+                </div>
+            </div>
+
+            <div class="list-group-item border-0 mb-2">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
+                        <i class="fa-regular fa-bookmark fa-lg"></i>
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block wd-left-panel-text">Bookmarks</div>
+                </div>
+            </div>
+
+            <div class="list-group-item border-0 mb-2">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div class="d-none d-xl-block wd-left-panel-text">Top Articles</div>
+                </div>
+            </div>
+
+            <div class="list-group-item border-0 mb-2">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
+                        <i class="fa-regular fa-user fa-lg"></i>
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block wd-left-panel-text">Profile</div>
+                </div>
+            </div>
+
+            <div class="list-group-item border-0 mb-2">
+                <div class="wd-left-panel-container">
+                    <div class="wd-left-panel-icon">
+                        <i class="fa-solid fa-ellipsis fa-lg"></i>
+                    </div>
+                    <div class="col-xl-1 d-none d-xl-block wd-left-panel-text">More</div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div>
+            <button id="tweet" class="wd-tweet-button mt-2">Tweet</button>
+        </div>
+    </div>
+
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10">
+        <div class="wd-middle-panel-container">
+            <div class="wd-search-and-navigation-bar-box">
+                <div class="wd-search-bar ms-4 me-3">
+                    <div class="wd-search-box">
+                        <!--search icon-->
+                        <label for="search-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24px" height="24px"
+                                 fill="rgb(76,82,89)" class="wd-search-icon">
+                                <path d="M 27 9 C 17.075 9 9 17.075 9 27 C 9 36.925 17.075 45 27 45 C 31.129213 45 34.9263 43.587367 37.966797 41.240234 L 51.048828 54.322266 C 51.952828 55.226266 53.418266 55.226266 54.322266 54.322266 C 55.226266 53.418266 55.226266 51.952828 54.322266 51.048828 L 41.240234 37.966797 C 43.587367 34.9263 45 31.129213 45 27 C 45 17.075 36.925 9 27 9 z M 27 13 C 34.719 13 41 19.281 41 27 C 41 34.719 34.719 41 27 41 C 19.281 41 13 34.719 13 27 C 13 19.281 19.281 13 27 13 z"/>
+                            </svg>
+                        </label>
+
+                        <input type="text" id="search-text" name="search-text"
+                               placeholder="Search Tuiter" class="me-2 wd-search-input">
+                    </div>
+                    <div class="align-self-center ms-5">
+                        <a href="explore-settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="wd-tabs-container mt-2 mb-1">
+                    <div class="wd-flex-container">
+                        <div class="wd-flex-box ">
+                            <div class="wd-flex-text-selected wd-flex-box-selected">For you</div>
+                        </div>
+                        <div class="wd-flex-box">Trending</div>
+                        <div class="wd-flex-box">News</div>
+                        <div class="wd-flex-box">Sports</div>
+                        <div class="wd-flex-box">Entertainment</div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="wd-large-picture-container">
+                <img src="images/tag_reuters.com,2023_newsml_LYNXMPEJ0G022_22023-01-17T035438Z_2_LYNXMPEJ0G022_RTROPTP_3_TENNIS-AUSOPEN.jpeg"
+                     width="100%">
+                <div class="wd-large-picture-title">
+                    <div class="wd-large-picture-title-small-text">Tennis Tournament · LIVE</div>
+                    <div>Australian Open 2023</div>
+                </div>
+            </div>
+
+            <div class="wd-suggestion-container mt-2">
+                <div class="wd-suggestion-box-d p-2">
+                    <div class="wd-text-box  m-2">
+                        <div class="wd-dark-text">
+                            Politics · Trending
+                        </div>
+
+                        <div>
+                            <span class="wd-black-text">Seizures</span>
+                        </div>
+
+                        <div class="wd-dark-text">
+                            4,953 Tweets
+                        </div>
+                    </div>
+
+                    <div class="position-absolute end-0 top-0 m-3">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+                <div class="wd-suggestion-box-d p-2">
+                    <div class="wd-text-box  m-2">
+                        <div>
+                            <span class="wd-black-text">#InfinityPool</span>
+                        </div>
+
+
+                        <div class="wd-dark-text-bolder">
+                            See the electrifying thriller Infinity Pool in theaters - If you dare
+                        </div>
+
+                        <div class="wd-dark-text">
+                            <i class="fa-solid fa-square-arrow-up-right"></i> Promoted by NEON
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="wd-suggestion-box-d p-2">
+                    <div class="wd-text-box  m-2">
+                        <div class="wd-dark-text">
+                            Sports · Trending
+                        </div>
+
+                        <div>
+                            <span class="wd-black-text">RIP Bean</span>
+                        </div>
+
+                        <div class="wd-dark-text">
+                            18K Tweets
+                        </div>
+
+                        <div class="position-absolute end-0 top-0 m-3">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wd-suggestion-box-d p-2">
+                    <div class="wd-text-box  m-2">
+                        <div class="wd-dark-text">
+                            Politics · Trending
+                        </div>
+
+                        <div>
+                            <span class="wd-black-text">Durham</span>
+                        </div>
+
+                        <div class="wd-dark-text">
+                            <span>Trending with </span>
+                            <span class="wd-link-text">Barr, Barr</span>
+                        </div>
+
+                        <div class="position-absolute end-0 top-0 m-3">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wd-suggestion-box-d p-2">
+                    <div class="wd-text-box  m-2">
+                        <div class="wd-dark-text">
+                            Trending in Business and finance
+                        </div>
+
+                        <div>
+                            <span class="wd-black-text">#DirectedEvolution</span>
+                        </div>
+
+                        <div class="wd-dark-text">
+                            172K Tweets
+                        </div>
+
+                        <div class="position-absolute end-0 top-0 m-3">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-xxl-4 col-xl-4 col-lg-5 d-none d-lg-block">
+        <div class="wd-who-to-follow-container">
+            <div class="wd-who-to-follow-background-color list-group-item border-0 ">
+                <div class="wd-font-weight-bold-title">Who to follow</div>
+
+            </div>
+
+            <div class="wd-who-to-follow-background-color list-group-item border-0
+            ">
+                <div class="wd-who-to-follow-sub-container">
+                    <img src="images/FJ16ThMG_400x400.jpg" class="wd-right-container-icon me-2">
+                    <div class="justify-content-between ms-2">
+                        <div class="text-nowrap wd-font-weight-bold">
+                            <span>Northeastern U.</span>
+                            <span><img src="images/correct-mark-blue.png"></span>
+                        </div>
+                        <div>@Northeastern</div>
+                    </div>
+                    <div class="ms-auto w-25 wd-right-container-follow-button">
+                        Follow
+                    </div>
+                </div>
+            </div>
+
+            <div class="wd-who-to-follow-background-color list-group-item border-0">
+                <div class="wd-who-to-follow-sub-container">
+                    <img src="images/Dm80jwOp_400x400.jpg" class="wd-right-container-icon me-2">
+                    <div class="justify-content-between ms-2">
+                        <div class="text-nowrap wd-font-weight-bold">Matt Wallace
+                            <span><img src="images/correct-mark-blue.png"></span>
+                        </div>
+                        <div>@MattWallace888</div>
+
+                    </div>
+                    <div class=" ms-auto w-25 wd-right-container-follow-button">
+                        Follow
+                    </div>
+                </div>
+            </div>
+
+            <div class="wd-who-to-follow-background-color list-group-item border-0">
+                <div class="wd-who-to-follow-sub-container">
+                    <img src="images/iJJsSeBY_400x400.png" class="wd-right-container-icon-promoted me-2">
+                    <div class="justify-content-between ms-2 position-relative">
+                        <div class="text-nowrap wd-font-weight-bold">PointsBet Sport…
+                            <span><img src="images/correct-mark-golden.png"></span>
+                        </div>
+                        <div>@PointsBetUSA</div>
+                        <div class="wd-promoted-text">
+                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                            Promoted
+                        </div>
+                    </div>
+                    <div class="ms-auto w-25 wd-right-container-follow-button">
+                        Follow
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="wd-who-to-follow-background-color list-group-item border-0 mt-5">
+                <div class="wd-who-to-follow-sub-container">
+                    <div class="wd-blue-link-text">
+                        Show more
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="wd-footage-container m-3">
+            <span
+                    class="wd-footage-text">Terms of Service</span><span
+                class="wd-footage-text">Privacy Policy</span><span class="wd-footage-text">Cookie Policy</span>
+
+            <span class="wd-footage-text">Accessibility</span><span class="wd-footage-text">Ads info</span><span
+                class="wd-footage-text">More …</span>
+            <div><span class="wd-footage-text">2023 Twitter, Inc.</span></div>
+        </div>
+    </div>
+</div>
+</body>
