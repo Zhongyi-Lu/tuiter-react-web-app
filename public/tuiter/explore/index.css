@@ -158,6 +158,8 @@ body {
 
 .wd-background {
     margin: 16px;
+    min-width: 576px;
+    overflow: scroll;
 }
 
 
@@ -220,9 +222,6 @@ body {
     border-radius: 16px;
 }
 
-.wd-flex-box-image {
-    border-radius: 12px;
-}
 
 .wd-suggestion-box-d {
     width: 100%;
@@ -270,3 +269,4 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
+
