@@ -272,3 +272,7 @@ body {
     font-weight: 400;
 }
 
+.wd-navigation-link{
+    text-decoration: none;
+    color: black;
+}
