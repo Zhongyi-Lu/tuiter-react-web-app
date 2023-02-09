@@ -56,12 +56,16 @@ body {
 }
 
 .wd-who-to-follow-container {
-    background-color: #f7f9f9;
+    background-color: #f7f9f9 !important;
     border-width: 1px 1px 1px 1px;
     border-color: #d6dbe0;
     border-style: solid;
     border-radius: 20px;
     width: 100%;
+}
+
+.wd-who-to-follow-background-color{
+    background-color: #f7f9f9 !important;
 }
 
 
@@ -87,7 +91,6 @@ body {
 }
 
 .wd-promoted-text {
-    /*margin-left: 64px;*/
     position: absolute;
 }
 
@@ -154,9 +157,11 @@ body {
 
 
 .wd-background {
-    margin: 16px;
-    min-width: 540px;
+    /*margin: 16px;*/
+    /*min-width: 540px;*/
+
 }
+
 
 .wd-sub-box-b {
     border: 5px;
@@ -180,7 +185,7 @@ body {
 
 .wd-large-picture-title {
     color: white;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     position: absolute;
     left: 16px;
@@ -252,7 +257,6 @@ body {
 }
 
 .wd-flex-box-selected {
-    /*color: rgb(29, 161, 242);*/
     border-bottom: 4px solid rgb(29, 161, 242);
     padding-bottom: 8px;
 
@@ -265,6 +269,6 @@ body {
 }
 
 .wd-large-picture-title-small-text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
