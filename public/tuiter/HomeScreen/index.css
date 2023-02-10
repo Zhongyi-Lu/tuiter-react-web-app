@@ -5,6 +5,7 @@ body {
 
 }
 
+
 .wd-container {
     width: 600px;
     background-color: black;
@@ -145,4 +146,14 @@ body {
 .wd-counter-container {
     display: flex;
     justify-content: space-between;
+}
+
+.wd-navigation-link-text {
+    text-decoration: none !important;
+    color: black;
+}
+
+.wd-navigation-link-text-active {
+    text-decoration: none !important;
+    color: white;
 }
