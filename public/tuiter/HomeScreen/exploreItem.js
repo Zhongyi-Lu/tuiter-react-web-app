@@ -14,7 +14,7 @@ const exploreItem = (item) => {
                         ${item.userName}
                     </span>
                     <span>
-                        <i class="fa-sharp fa-solid fa-circle-check"></i>
+                        <i class="fa-regular fa-circle-check"></i>
                     </span>
                     <span class="wd-userhandle-text">
                         @${item.handle} · ${item.time}
