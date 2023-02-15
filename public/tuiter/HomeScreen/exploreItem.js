@@ -42,18 +42,40 @@ const exploreItem = (item) => {
             <div class="wd-sub-container-b2">
                 <img class="wd-large-image" src="${item.largeImage}" width="504" height="264" style="display: block">
 
-                <div class="wd-image-title-box">
-                    <div class="wd-image-title-text">
-                        ${item.imageTitle}
+
+                ${item.imageTitle !== undefined ?`
+                    <div class="wd-image-after-title-box">
+                        <div class="wd-image-title-box">
+                            ${item.imageTitle !== undefined ? `
+                                <div class="wd-image-title-text">
+                                        ${item.imageTitle}
+                                    </div>
+                                    ` : `<div></div>`
+                        }
+            
+            
+                            ${item.imageBody !== undefined ?
+                            `<div 
+                                            className="wd-image-title-text-gray">
+                                            ${item.imageBody}
+                                        </div>` : `<div></div>`
+            
+                        }
+            
+            
+                            ${item.website !== undefined ? `
+                                        <div class="wd-image-title-text-gray">
+                                            <span><i class="fa-solid fa-link"></i></span>
+                                            ${item.website}
+                                        </div>
+                                        ` : `<div></div>`
+            
+                        }
+                        </div>
+            
                     </div>
-                    <div class="wd-image-title-text-gray">
-                        ${item.imageBody}
-                    </div>
-                    <div class="wd-image-title-text-gray">
-                    <span><i class="fa-solid fa-link"></i></span>
-                        ${item.website}
-                    </div>
-                </div>
+                    `:`<div></div>`
+                }
             </div>
 
             <div class="wd-counter-container">
