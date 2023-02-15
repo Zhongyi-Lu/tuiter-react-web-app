@@ -46,7 +46,7 @@ export function exploreScreen() {
             </div>
 
             <div class="wd-exp-tabs-container">
-                <ul class="nav nav-tabs ">
+                <ul class="nav nav-tabs nav-pills mb-2">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="for-you.html">For you</a>
                     </li>
