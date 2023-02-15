@@ -149,15 +149,6 @@ body {
     justify-content: space-between;
 }
 
-.wd-navigation-link-text {
-    text-decoration: none !important;
-    color: black;
-}
-
-.wd-navigation-link-text-active {
-    text-decoration: none !important;
-    color: white;
-}
 
 .wd-image-after-title-box{
     padding: 12px;

@@ -8,35 +8,35 @@ body {
 }
 
 
-.wd-left-panel-container {
+.wd-nav-left-panel-container {
     display: flex;
     height: 24px;
 }
 
-.wd-left-panel-icon {
+.wd-nav-left-panel-icon {
     height: 16px;
     width: 16px;
     margin-right: 12px;
 }
 
-.wd-right-container-icon {
+.wd-who-icon {
     width: 48px;
     height: 48px;
     border-radius: 24px;
 }
 
-.wd-font-weight-bold {
+.wd-who-font-weight-bold {
     font-weight: bold;
     font-size: 16px;
     z-index: 1100;
 }
 
-.wd-who-to-follow-sub-container{
+.wd-who-sub-container {
     align-items: center;
     display: flex;
 }
 
-.wd-right-container-follow-button {
+.wd-who-button {
     width: 80px;
     height: 36px;
     border-radius: 16px;
@@ -58,18 +58,18 @@ body {
 }
 
 
-.wd-search-and-navigation-bar-box {
+.wd-exp-search-and-navigation-bar-box {
     border-width: 1px 1px 3px 1px;
     border-color: #d6dbe0;
     width: 100%;
 }
 
-.wd-search-bar {
+.wd-exp-search-bar {
     display: flex;
     align-items: center;
 }
 
-.wd-search-box {
+.wd-exp-search-box {
     border-radius: 16px;
     width: 100%;
     display: flex;
@@ -80,7 +80,7 @@ body {
     border-style: solid;
 }
 
-.wd-search-input {
+.wd-exp-search-input {
     color: #4b5157;
     height: 80%;
     width: 85%;
@@ -91,7 +91,7 @@ body {
 }
 
 
-.wd-search-icon {
+.wd-exp-search-icon {
     width: 24px;
     height: 24px;
     margin-inline: 16px;
@@ -114,17 +114,17 @@ body {
 }
 
 
-.wd-tabs-container {
+.wd-exp-tabs-container {
     border-width: 0 0px 1px 0px;
     border-color: #e8eaed;
     margin-bottom: 8px;
 }
 
-.wd-large-picture-container {
+.wd-exp-large-picture-container {
     position: relative;
 }
 
-.wd-large-picture-title {
+.wd-exp-large-picture-title {
     color: white;
     font-size: 28px;
     font-weight: bold;
@@ -133,29 +133,29 @@ body {
     bottom: 8px;
 }
 
-.wd-dark-text {
+.wd-post-dark-text {
     color: rgb(110, 118, 125);
     font-size: 16px;
 }
 
-.wd-black-text {
+.wd-post-black-text {
     color: black;
     font-size: 16px;
     font-weight: bolder;
 }
 
 
-.wd-small-image {
+.wd-post-small-image {
     width: 100px;
     height: 100px;
     border-radius: 16px;
 }
 
-.wd-flex-box-image {
+.wd-post-flex-box-image {
     border-radius: 12px;
 }
 
-.wd-suggestion-box-d {
+.wd-post-suggestion-box-d {
     width: 100%;
     border-width: 0 1px 1px 1px;
     border-color: #dfdfdf;
@@ -163,6 +163,17 @@ body {
     display: flex;
 }
 
-.wd-text-box {
+.wd-post-text-box {
     flex: 1;
+}
+
+
+.wd-nav-link-text {
+    text-decoration: none !important;
+    color: black;
+}
+
+.wd-nav-link-text-active {
+    text-decoration: none !important;
+    color: white;
 }
