@@ -2,7 +2,7 @@ import exploreItems from "../PostSummaryList/exploreItems.js";
 import postSummaryItem from "../PostSummaryList/PostSummaryItem.js";
 
 export function exploreScreen() {
-    return (`<div class="col-10 col-lg-7 col-xl-6 text-white">
+    return (`
         <div class="wd-exp-search-and-navigation-bar-box">
             <div class="wd-exp-search-bar">
                 <div class="wd-exp-search-box">
@@ -74,6 +74,6 @@ export function exploreScreen() {
                 </div>
         </div>
         ${exploreItems.map((item) => postSummaryItem(item)).join('')}
-    </div>
+    
 `);
 }

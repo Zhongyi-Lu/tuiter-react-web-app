@@ -67,7 +67,7 @@ body {
     width: 48px
 }
 
-.wd-large-image {
+.wd-home-large-image {
     object-fit: cover;
 }
 
@@ -78,7 +78,7 @@ body {
     padding-bottom: 12px;
 }
 
-.wd-three-dots {
+.wd-home-three-dots {
     position: absolute;
     right: 0px;
     top: 0px;

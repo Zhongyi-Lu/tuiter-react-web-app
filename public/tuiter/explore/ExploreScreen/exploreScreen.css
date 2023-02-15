@@ -56,3 +56,13 @@
     left: 8px;
     bottom: 8px;
 }
+
+.wd-exp-sub-container-b2 {
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: #dfdfdf;
+    border-style: solid;
+    overflow: hidden;
+    width: 504px;
+    margin-top: 12px;
+}

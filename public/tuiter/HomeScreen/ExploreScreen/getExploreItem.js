@@ -20,7 +20,7 @@ const getExploreItem = (item) => {
                         @${item.handle} · ${item.time}
                     </span>
 
-                    <div class="wd-three-dots">
+                    <div class="wd-home-three-dots">
                         <svg fill="rgb(111, 120, 128)" height="12px" width="12px" version="1.1" id="Capa_1"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                              viewBox="0 0 32.055 32.055" xml:space="preserve">
@@ -39,8 +39,8 @@ const getExploreItem = (item) => {
 
             </div>
 
-            <div class="wd-sub-container-b2">
-                <img class="wd-large-image" src="${item.largeImage}" width="504" height="264" style="display: block">
+            <div class="wd-home-sub-container-b2">
+                <img class="wd-home-large-image" src="${item.largeImage}" style="display: block">
 
 
                 ${item.imageTitle !== undefined ? `
@@ -56,7 +56,7 @@ const getExploreItem = (item) => {
             
                             ${item.imageBody !== undefined ?
         `<div 
-                                            className="wd-image-title-text-gray">
+                                            className="wd-home-image-title-text-gray">
                                             ${item.imageBody}
                                         </div>` : `<div></div>`
 
