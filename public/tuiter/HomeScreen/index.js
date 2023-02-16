@@ -2,8 +2,7 @@
 import items from "./ExploreScreen/items.js";
 import getExploreItem from "./ExploreScreen/getExploreItem.js";
 import NavigationSidebar from "../explore/NavigationSidebar";
-import who from "../explore/WhoToFollowListItem/who.js";
-import whoToFollowListItem from "../explore/WhoToFollowListItem/WhoToFollowListItem.js";
+import WhoToFollowComponent from "../explore/WhoToFollowListItem/whoToFollowComponent.js";
 
 const navigationItems = [
     {
@@ -72,7 +71,7 @@ function exploreComponent() {
             </div>
         </div>
         <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 text-white">
-            ${who.map((item) => whoToFollowListItem(item)).join('')}
+            ${WhoToFollowComponent()}
         </div>
     </div>
 
