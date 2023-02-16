@@ -1,6 +1,7 @@
+import React from "react";
 import Labs from "./labs";
-import HelloWorld from "./labs/a6/hello-world";
-import Tuiter from "./tuiter";
+import HelloWorld from "./labs/a6/hello-world.js";
+import Tuiter from "./tuiter/index.js";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 
@@ -13,13 +14,14 @@ function App() {
                            element={<Labs/>}/>
                     <Route path="/hello"
                            element={<HelloWorld/>}/>
-                    <Route path="/tuiter"
+                    <Route path="/tuiter/*"
                            element={<Tuiter/>}/>
                 </Routes>
             </div>
         </BrowserRouter>
     );
 }
+
 export default App;
 
 
