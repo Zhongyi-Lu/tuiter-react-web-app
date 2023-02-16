@@ -1,0 +1,20 @@
+.wd-nav-left-panel-container {
+    display: flex;
+    height: 24px;
+}
+
+.wd-nav-left-panel-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 12px;
+}
+
+.wd-nav-link-text {
+    text-decoration: none !important;
+    color: black;
+}
+
+.wd-nav-link-text-active {
+    text-decoration: none !important;
+    color: white;
+}

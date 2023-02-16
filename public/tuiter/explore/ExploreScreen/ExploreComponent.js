@@ -1,22 +1,22 @@
-import exploreItems from "../PostSummaryList/index.js";
+import exploreItems from "../PostSummaryList/exploreItems.js";
 import postSummaryItem from "../PostSummaryList/PostSummaryItem.js";
 
 export function exploreScreen() {
-    return (`<div class="col-10 col-lg-7 col-xl-6 text-white">
-        <div class="wd-search-and-navigation-bar-box">
-            <div class="wd-search-bar">
-                <div class="wd-search-box">
+    return (`
+        <div class="wd-exp-search-and-navigation-bar-box">
+            <div class="wd-exp-search-bar">
+                <div class="wd-exp-search-box">
                     <!--search icon-->
                     <label for="search-text">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24px" height="24px"
-                             fill="rgb(76,82,89)" class="wd-search-icon">
+                             fill="rgb(76,82,89)" class="wd-exp-search-icon">
                             <path
                                 d="M 27 9 C 17.075 9 9 17.075 9 27 C 9 36.925 17.075 45 27 45 C 31.129213 45 34.9263 43.587367 37.966797 41.240234 L 51.048828 54.322266 C 51.952828 55.226266 53.418266 55.226266 54.322266 54.322266 C 55.226266 53.418266 55.226266 51.952828 54.322266 51.048828 L 41.240234 37.966797 C 43.587367 34.9263 45 31.129213 45 27 C 45 17.075 36.925 9 27 9 z M 27 13 C 34.719 13 41 19.281 41 27 C 41 34.719 34.719 41 27 41 C 19.281 41 13 34.719 13 27 C 13 19.281 19.281 13 27 13 z"/>
                         </svg>
                     </label>
 
                     <input type="text" id="search-text" name="search-text"
-                           placeholder="Search Tuiter" class="me-2 wd-search-input">
+                           placeholder="Search Tuiter" class="me-2 wd-exp-search-input">
                 </div>
                 <div class="ms-2 align-self-center">
                     <a href="explore-settings.html">
@@ -45,8 +45,8 @@ export function exploreScreen() {
                 </div>
             </div>
 
-            <div class="wd-tabs-container">
-                <ul class="nav nav-tabs ">
+            <div class="wd-exp-tabs-container">
+                <ul class="nav nav-tabs nav-pills mb-2">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="for-you.html">For you</a>
                     </li>
@@ -67,13 +67,13 @@ export function exploreScreen() {
         </div>
 
 
-        <div class="wd-large-picture-container">
+        <div class="wd-exp-large-picture-container">
             <img src="images/Starship-Mk1-Day.webp" width="100%">
-                <div class="wd-large-picture-title">
+                <div class="wd-exp-large-picture-title">
                     SpaceX's Starship
                 </div>
         </div>
         ${exploreItems.map((item) => postSummaryItem(item)).join('')}
-    </div>
+    
 `);
 }

@@ -5,7 +5,7 @@ body {
 
 }
 
-.wd-container {
+.wd-home-container {
     width: 600px;
 }
 
@@ -67,7 +67,7 @@ body {
     width: 48px
 }
 
-.wd-large-image {
+.wd-home-large-image {
     object-fit: cover;
 }
 
@@ -78,7 +78,7 @@ body {
     padding-bottom: 12px;
 }
 
-.wd-three-dots {
+.wd-home-three-dots {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -110,18 +110,18 @@ body {
     border-style: solid;
 }
 
-.wd-image-title-text {
+.wd-home-image-title-text {
     margin-bottom: 2px;
     font-size: 15px;
 }
 
-.wd-image-title-text-gray {
+.wd-home-image-title-text-gray {
     margin-bottom: 2px;
     font-size: 15px;
     color: rgb(111, 120, 128);
 }
 
-.wd-counter-text {
+.wd-home-counter-text {
     color: rgb(111, 120, 128);
     margin-left: 12px;
 }
@@ -130,14 +130,14 @@ body {
     padding-right: 12px;
 }
 
-.wd-counter-box {
+.wd-home-counter-box {
     display: flex;
     padding: 12px;
     flex: 1;
     align-items: center
 }
 
-.wd-counter-container {
+.wd-home-counter-container {
     display: flex;
     justify-content: space-between;
 }
