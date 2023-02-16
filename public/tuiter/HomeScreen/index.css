@@ -128,3 +128,7 @@ body {
     max-width: 504px;
     margin-top: 12px;
 }
+
+.wd-home-link-text{
+    text-decoration: none !important;
+}
