@@ -1,7 +1,7 @@
 import exploreItems from "../PostSummaryList/exploreItems.js";
 import postSummaryItem from "../PostSummaryList/PostSummaryItem.js";
 
-export function exploreScreen() {
+function exploreScreen() {
     return (`
         <div class="wd-exp-search-and-navigation-bar-box">
             <div class="wd-exp-search-bar">
@@ -77,3 +77,5 @@ export function exploreScreen() {
     
 `);
 }
+
+export default exploreScreen;

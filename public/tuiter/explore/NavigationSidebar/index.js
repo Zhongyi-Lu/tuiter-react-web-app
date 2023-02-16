@@ -1,12 +1,9 @@
 import getNavigationItem from "./getNavigationItem.js";
 
-
-
-
 const NavigationSidebar = (items) => {
     return (`
    <div class="list-group">
-     <a class="list-group-item" href="/">
+     <a class="list-group-item" href="../../index.html">
        <i class="fab fa-twitter"></i>
      </a>       
        ${items.map((item) => getNavigationItem(item)).join("")}
