@@ -1,7 +1,7 @@
 /* eslint-env jquery */
 import items from "./ExploreScreen/items.js";
 import getExploreItem from "./ExploreScreen/getExploreItem.js";
-import NavigationSidebar from "../explore/NavigationSidebar";
+import NavigationSidebar from "../explore/NavigationSidebar/index.js";
 import WhoToFollowComponent from "../explore/WhoToFollowListItem/whoToFollowComponent.js";
 
 const navigationItems = [
