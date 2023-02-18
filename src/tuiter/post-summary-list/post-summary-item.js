@@ -24,7 +24,7 @@ const PostSummaryItem = (item) => {
             </div>
 
             <div className="wd-flex-box-image px-2 py-2">
-                <img className="wd-small-image" src={`/images/${item.image}`} alt="small image"/>
+                <img className="wd-small-image" src={`/images/${item.image}`} alt="small"/>
             </div>
         </div>
     );
