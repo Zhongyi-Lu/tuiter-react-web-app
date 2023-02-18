@@ -133,6 +133,15 @@ body {
     align-items: center
 }
 
+.wd-home-retweet-body-container{
+    border-width: 1px;
+    border-radius: 12px;
+    width: 100%;
+    border-style: solid;
+    border-color: #f2f5f6;
+    margin-top: 8px;
+}
+
 .wd-home-counter-container {
     display: flex;
     justify-content: space-between;

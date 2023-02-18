@@ -2,6 +2,46 @@ import React from "react";
 import "./index.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
+
+const RetweetBody = ({item}) => {
+    return <div className="wd-home-sub-container-b">
+
+
+        <div className="wd-home-image-box">
+            <img className="wd-home-small-image"
+                 src={item.icon}/>
+        </div>
+
+
+        <div className="wd-home-detail-tuit">
+
+
+            <div className="wd-home-sub-box-b">
+                <div>
+                    <div>
+                        <span className="wd-home-username-text">
+                            {item.userName}
+                        </span>
+                        <span className="wd-home-check-mark">
+                            <FontAwesomeIcon icon="fa-solid fa-circle-check"/>
+                        </span>
+                        <span className="wd-home-userhandle-text">
+                            @{item.handle} · {item.time}
+                        </span>
+                    </div>
+
+
+                    <div className="wd-home-message-body">
+                        {item.tuitBody}
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+}
 const getHomeItem = (item) => {
     return <div className="wd-home-sub-container-a">
         {item.retweetUserName !== undefined &&
@@ -97,6 +137,13 @@ const getHomeItem = (item) => {
                         }
                     </div>
                 }
+
+                {item.retweetBody !== undefined &&
+                    <div className="wd-home-retweet-body-container">
+                        <RetweetBody item={item.retweetBody}/>
+                    </div>
+                }
+
                 <div className="wd-home-counter-container">
                     <div className="wd-home-counter-box">
                         <svg fill="rgb(111, 120, 128)" xmlns="http://www.w3.org/2000/svg" width="16" height="16"

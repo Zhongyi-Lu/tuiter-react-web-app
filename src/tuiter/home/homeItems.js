@@ -17,6 +17,10 @@ const items = [{
     time: "15h",
     tuitBody: "We might need a different name, as this is basically just Starlink withroaming capability, so you can take your terminal anywhere.",
     retweetBody: {
+        icon: "/images/spacex2.png",
+        userName: "SpaceX",
+        handle: "SpaceX",
+        time: "23h",
 
     },
     reply: "965",
