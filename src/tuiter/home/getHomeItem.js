@@ -8,7 +8,7 @@ const RetweetBody = ({item}) => {
 
 
         <div className="wd-home-image-box">
-            <img className="wd-home-small-image"
+            <img className="wd-home-small-image" alt="small image"
                  src={item.icon}/>
         </div>
 
@@ -56,7 +56,7 @@ const getHomeItem = (item) => {
         <div className="wd-home-sub-container-b">
 
             <div className="wd-home-image-box">
-                <img className="wd-home-small-image"
+                <img className="wd-home-small-image" alt="small image"
                      src={item.icon}/>
             </div>
 
@@ -100,7 +100,7 @@ const getHomeItem = (item) => {
 
                 {item.largeImage !== undefined &&
                     <div className="wd-home-sub-container-b2">
-                        <img className="wd-home-large-image" src={item.largeImage}/>
+                        <img className="wd-home-large-image" src={item.largeImage}  alt="large image"/>
 
                         {item.imageTitle !== undefined ?
                             <div className="wd-home-image-after-title-box">
@@ -198,7 +198,7 @@ const getHomeItem = (item) => {
 
                 {item.showThisThread &&
                     <div>
-                        <a href="#" className="wd-home-show-this-thread">Show this thread</a>
+                        <a href="#/" className="wd-home-show-this-thread">Show this thread</a>
                     </div>
                 }
             </div>

@@ -5,7 +5,7 @@ const WhoToFollowListItem = ({who}) => {
     return (
         <div className="list-group-item">
             <div className="wd-who-to-follow-sub-container">
-                <img src={`/images/${who.avatarIcon}`} className="wd-right-container-icon"/>
+                <img src={`/images/${who.avatarIcon}`} className="wd-right-container-icon" alt="avatar icon"/>
                 <div className="justify-content-between ms-2">
                     <div className="text-nowrap wd-font-weight-bold">{who.userName}
                         <i className="fa-solid fa-circle-check"></i></div>
