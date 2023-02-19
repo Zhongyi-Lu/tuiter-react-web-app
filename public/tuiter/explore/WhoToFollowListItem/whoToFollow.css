@@ -19,7 +19,7 @@
     width: 80px;
     height: 36px;
     border-radius: 16px;
-    background-color: #0c6dfd;
+    background-color: #18a0d3;
     color: white;
     text-align: center;
     vertical-align: middle;
@@ -33,4 +33,13 @@
     font-weight: bolder;
     align-items: center;
     display: flex;
+}
+
+.wd-who-list-group-item {
+    background-color: #222222 !important;
+    color: white !important;
+}
+
+.wd-who-great-container {
+    border-radius: 4px;
 }

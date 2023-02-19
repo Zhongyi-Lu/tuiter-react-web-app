@@ -7,12 +7,12 @@ const PostSummaryItem = (item) => {
                 </div>
 
                 <div>
-                    <span class="wd-post-black-text">${item.userName} <i class="fa-solid fa-circle-check"></i></span>
+                    <span class="wd-post-white-text">${item.userName} <i class="fa-solid fa-circle-check"></i></span>
                     <span class="wd-post-dark-text">- ${item.time}
                         </span>
                 </div>
 
-                <div class="wd-post-black-text wd-post-text-box">
+                <div class="wd-post-white-text wd-post-text-box">
                     ${item.title}
                 </div>
 

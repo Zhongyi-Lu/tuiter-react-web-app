@@ -1,6 +1,7 @@
 .wd-nav-left-panel-container {
     display: flex;
     height: 24px;
+    color: white !important;
 }
 
 .wd-nav-left-panel-icon {
@@ -17,4 +18,18 @@
 .wd-nav-link-text-active {
     text-decoration: none !important;
     color: white;
+}
+
+.wd-nav-gray-background {
+    background-color: #222222 !important;
+    color: white !important;
+}
+
+.wd-nav-active-button-background {
+    background-color: #18a0d3 !important;
+    color: white !important;
+}
+
+.wd-nav-tweet-button {
+    background-color: #18a0d3 !important;
 }

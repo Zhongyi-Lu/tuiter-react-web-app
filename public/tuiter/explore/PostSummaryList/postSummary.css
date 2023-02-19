@@ -4,8 +4,8 @@
     font-size: 16px;
 }
 
-.wd-post-black-text {
-    color: black;
+.wd-post-white-text {
+    color: white;
     font-size: 16px;
     font-weight: bolder;
 }
@@ -24,9 +24,10 @@
 .wd-post-suggestion-box-d {
     width: 100%;
     border-width: 0 1px 1px 1px;
-    border-color: #dfdfdf;
+    border-color: #282828;
     border-style: solid;
     display: flex;
+    background-color: #222222;
 }
 
 .wd-post-text-box {
