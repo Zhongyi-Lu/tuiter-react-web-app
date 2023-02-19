@@ -1,5 +1,6 @@
 import exploreItems from "../PostSummaryList/exploreItems.js";
 import postSummaryItem from "../PostSummaryList/PostSummaryItem.js";
+import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
 
 function exploreScreen() {
     return (`
@@ -73,7 +74,7 @@ function exploreScreen() {
                     SpaceX's Starship
                 </div>
         </div>
-        ${exploreItems.map((item) => postSummaryItem(item)).join('')}
+        ${PostSummaryList()}
     
 `);
 }

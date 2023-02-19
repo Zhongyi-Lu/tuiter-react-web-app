@@ -15,6 +15,12 @@ body {
     border-style: solid;
 }
 
+.wd-home-post-summary-list-container {
+    border-color: #dfdfdf;
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+}
+
 .wd-home-image-box {
     padding-right: 12px;
     overflow: hidden;
@@ -129,6 +135,6 @@ body {
     margin-top: 12px;
 }
 
-.wd-home-link-text{
+.wd-home-link-text {
     text-decoration: none !important;
 }
