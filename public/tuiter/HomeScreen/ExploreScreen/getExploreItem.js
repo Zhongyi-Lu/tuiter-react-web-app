@@ -13,7 +13,7 @@ const getExploreItem = (item) => {
                     <span class="wd-home-username-text">
                         ${item.userName}
                     </span>
-                    <span>
+                    <span class="wd-home-check-icon">
                         <i class="fa-regular fa-circle-check"></i>
                     </span>
                     <span class="wd-home-userhandle-text">
@@ -45,7 +45,7 @@ const getExploreItem = (item) => {
 
                 ${item.imageTitle !== undefined ? `
                     <div class="wd-home-image-after-title-box">
-                        <div class="wd-home-image-title-box">
+                        <div>
                             ${item.imageTitle !== undefined ? `
                                 <div class="wd-home-image-title-text">
                                         ${item.imageTitle}
@@ -56,7 +56,7 @@ const getExploreItem = (item) => {
             
                             ${item.imageBody !== undefined ?
         `<div 
-                                            className="wd-home-image-title-text-gray">
+                                            class="wd-home-image-title-text-white">
                                             ${item.imageBody}
                                         </div>` : `<div></div>`
 
@@ -64,7 +64,7 @@ const getExploreItem = (item) => {
             
             
                             ${item.website !== undefined ? `
-                                        <div class="wd-home-image-title-text-gray">
+                                        <div class="wd-home-image-title-text-white">
                                             <span><i class="fa-solid fa-link"></i></span>
                                             ${item.website}
                                         </div>

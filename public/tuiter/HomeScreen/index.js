@@ -13,7 +13,7 @@ const navigationItems = [
     {
         name: "Explore",
         href: "../explore/index.html",
-        icon: "fa-solid fa-house-chimney",
+        icon: "fa-solid fa-hashtag",
         active: false,
     },
     {

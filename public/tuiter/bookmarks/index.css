@@ -110,12 +110,7 @@ body {
     border-style: solid;
 }
 
-.wd-home-image-title-text {
-    margin-bottom: 2px;
-    font-size: 15px;
-}
-
-.wd-home-image-title-text-gray {
+.wd-home-image-title-text-white {
     margin-bottom: 2px;
     font-size: 15px;
     color: rgb(111, 120, 128);
