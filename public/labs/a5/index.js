@@ -1,5 +1,4 @@
 /* eslint-env jquery */
-alert('Hello World!');
 console.log('Variables and Constants');
 global1 = 10;
 var functionScoped = 2;

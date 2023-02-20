@@ -3,8 +3,6 @@ import exploreScreen from "./ExploreScreen/ExploreComponent.js";
 import WhoToFollowComponent from "./WhoToFollowListItem/whoToFollowComponent.js";
 
 /* eslint-env jquery */
-
-
 const navigationItems = [
     {
         name: "Home",
@@ -15,7 +13,7 @@ const navigationItems = [
     {
         name: "Explore",
         href: "../explore/index.html",
-        icon: "fa-solid fa-house-chimney",
+        icon: "fa-solid fa-hashtag",
         active: true,
     },
     {
@@ -55,11 +53,11 @@ const navigationItems = [
         active: false,
     },
 ];
+
 function exploreComponent() {
     $('#wd-explore').append(`
   <div class="row pt-3">
    <div class="col-2 col-md-2 col-lg-1 col-xl-2">
-   <!--<h3>Navigation Sidebar</h3>-->
      ${NavigationSidebar(navigationItems)}
    </div>
    <div class="col-10 col-lg-7 col-xl-6">

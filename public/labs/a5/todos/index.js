@@ -1,5 +1,3 @@
-// alert('Hello World!');
-
 
 import TodoList from "./TodoList.js";
 

@@ -1,8 +1,7 @@
 /* eslint-env jquery */
-import items from "./ExploreScreen/items.js";
-import getExploreItem from "./ExploreScreen/getExploreItem.js";
-import NavigationSidebar from "../explore/NavigationSidebar";
-import WhoToFollowComponent from "../explore/WhoToFollowListItem/whoToFollowComponent.js";
+import NavigationSidebar from "../explore/NavigationSidebar/index.js";
+import PostList from "./PostList/PostList.js";
+import PostSummaryList from "../explore/PostSummaryList/PostSummaryList.js";
 
 const navigationItems = [
     {
@@ -14,7 +13,7 @@ const navigationItems = [
     {
         name: "Explore",
         href: "../explore/index.html",
-        icon: "fa-solid fa-house-chimney",
+        icon: "fa-solid fa-hashtag",
         active: false,
     },
     {
@@ -60,18 +59,17 @@ function exploreComponent() {
     
     <div class="row pt-3">
         <div class="col-2 col-md-2 col-lg-1 col-xl-2">
-            <!--<h3>Navigation Sidebar</h3>-->
             ${NavigationSidebar(navigationItems)}
         </div>
         <div class="col-10 col-lg-7 col-xl-6">
             <div class="wd-home-great-container">
-                ${items.map(item =>
-                    getExploreItem(item)
-                ).join('')}
+                ${PostList()}
             </div>
         </div>
         <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 text-white">
-            ${WhoToFollowComponent()}
+            <div class="wd-home-post-summary-list-container">
+               ${PostSummaryList()}
+            </div>
         </div>
     </div>
 

@@ -1,5 +1,4 @@
-import exploreItems from "../PostSummaryList/exploreItems.js";
-import postSummaryItem from "../PostSummaryList/PostSummaryItem.js";
+import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
 
 function exploreScreen() {
     return (`
@@ -46,21 +45,21 @@ function exploreScreen() {
             </div>
 
             <div class="wd-exp-tabs-container">
-                <ul class="nav nav-tabs nav-pills mb-2">
+                <ul class="nav nav-tabs nav-pills mb-2 wd-exp-tabs-sub-container">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="for-you.html">For you</a>
+                        <a class="nav-link active wd-exp-active-tab" aria-current="page" href="for-you.html">For you</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="trending.html">Trending</a>
+                        <a class="nav-link wd-exp-inactive-tab" href="trending.html">Trending</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link wd-exp-inactive-tab" href="news.html">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sports.html">Sports</a>
+                        <a class="nav-link wd-exp-inactive-tab" href="sports.html">Sports</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link wd-exp-inactive-tab" href="entertainment.html">Entertainment</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +72,7 @@ function exploreScreen() {
                     SpaceX's Starship
                 </div>
         </div>
-        ${exploreItems.map((item) => postSummaryItem(item)).join('')}
+        ${PostSummaryList()}
     
 `);
 }
