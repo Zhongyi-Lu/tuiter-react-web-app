@@ -2,7 +2,7 @@ import getNavigationItem from "./getNavigationItem.js";
 
 const NavigationSidebar = (items) => {
     return (`
-   <div class="list-group">
+   <div class="list-group wd-nav-gray-background">
      <a class="list-group-item wd-nav-gray-background" href="../../index.html">
        <i class="fab fa-twitter"></i>
      </a>       
