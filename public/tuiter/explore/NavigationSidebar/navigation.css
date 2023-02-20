@@ -33,6 +33,7 @@
 .wd-nav-active-button-background {
     background-color: #18a0d3 !important;
     color: white !important;
+    border-width: 0px !important;
 }
 
 .wd-nav-tweet-button {
