@@ -138,8 +138,9 @@ body {
     border-radius: 12px;
     width: 100%;
     border-style: solid;
-    border-color: #f2f5f6;
+    border-color: #dfe5e9;
     margin-top: 8px;
+    padding-top: 8px;
 }
 
 .wd-home-counter-container {

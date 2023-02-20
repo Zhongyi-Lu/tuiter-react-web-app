@@ -21,11 +21,12 @@ const items = [{
         userName: "SpaceX",
         handle: "SpaceX",
         time: "23h",
+        tuitBody: "Starlink for RVs now has over 100,000 customers! Access high-speedow-latency internet on an as-needed basis anywhere Starlink providesactive coverage -> starlink.com/rv",
 
     },
-    reply: "965",
-    retweet: "2.4K",
-    like: "4K",
+    reply: "5346",
+    retweet: "1601",
+    like: "19.2K",
     showThisThread: false,
 }];
 
