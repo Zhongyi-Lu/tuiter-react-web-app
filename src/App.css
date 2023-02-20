@@ -81,10 +81,8 @@ body {
     border-radius: 16px;
     background-color: #0c6dfd;
     color: white;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 36px;
     z-index: 1000;
+    border-width: 0px;
 }
 
 .wd-tweet-button {

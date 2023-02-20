@@ -11,10 +11,11 @@ const WhoToFollowListItem = ({who}) => {
                         <i className="fa-solid fa-circle-check"></i></div>
                     <div>@{who.handle}</div>
                 </div>
-                <div className=" ms-auto w-25 wd-right-container-follow-button
-                    ">
-                    Follow
-                </div>
+                {/*<div className=" ms-auto w-25 wd-right-container-follow-button*/}
+                {/*    ">*/}
+                {/*    Follow*/}
+                {/*</div>*/}
+                <input type="button" value="Follow" className="ms-auto w-25 wd-right-container-follow-button"/>
             </div>
         </div>);
 };
