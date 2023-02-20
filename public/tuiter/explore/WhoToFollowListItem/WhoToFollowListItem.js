@@ -8,9 +8,10 @@ const WhoToFollowListItem = (who) => {
                         <i class="fa-solid fa-circle-check"></i></div>
                     <div>@${who.handle}</div>
                 </div>
-                <div class="ms-auto w-25 wd-who-button">
-                    Follow
-                </div>
+<!--                <div class="ms-auto w-25 wd-who-button">-->
+<!--                    Follow-->
+<!--                </div>-->
+                <input type="button" value="Follow" class="ms-auto w-25 wd-who-button"/>
             </div>
         </div>
  `);

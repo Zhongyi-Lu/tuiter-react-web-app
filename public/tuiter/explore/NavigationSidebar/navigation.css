@@ -38,3 +38,7 @@
 .wd-nav-tweet-button {
     background-color: #18a0d3 !important;
 }
+
+.wd-nav-tweet-button:hover {
+    background-color: #1788b3 !important;
+}
