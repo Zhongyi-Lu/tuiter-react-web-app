@@ -10,6 +10,11 @@ body {
     color: white !important;
 }
 
+.wd-exp-inactive-tab:hover {
+    color: white !important;
+    background-color: #282828 !important;
+}
+
 .wd-exp-search-and-navigation-bar-box {
     border-width: 1px 1px 3px 1px;
     border-color: #d6dbe0;
