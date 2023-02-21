@@ -1,7 +1,6 @@
 .wd-nav-left-panel-container {
     display: flex;
     height: 24px;
-    color: white !important;
 }
 
 
@@ -22,8 +21,6 @@
 }
 
 .wd-nav-gray-background {
-    background-color: #222222 !important;
-    color: white !important;
 }
 
 .wd-nav-gray-background :hover {
