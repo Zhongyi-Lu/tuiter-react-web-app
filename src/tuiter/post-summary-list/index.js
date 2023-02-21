@@ -6,7 +6,7 @@ export function PostSummaryList() {
     const postsArray = useSelector(state => state.tuits)
     return (
         <div className="wd-post-summary-box">
-            {summaryItems.map((item) => PostSummaryItem(item))}
+            {postsArray.map((item) => PostSummaryItem(item))}
         </div>
     );
 }
