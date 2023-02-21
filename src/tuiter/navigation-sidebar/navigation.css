@@ -24,12 +24,12 @@
 }
 
 .wd-nav-gray-background :hover {
-    background-color: #00a1d0 !important;
+    background-color: #0073f7 !important;
     color: white !important;
 }
 
 .wd-nav-active-button-background {
-    background-color: #18a0d3 !important;
+    /*background-color: #18a0d3 !important;*/
     color: white !important;
     border-width: 0px !important;
 }
