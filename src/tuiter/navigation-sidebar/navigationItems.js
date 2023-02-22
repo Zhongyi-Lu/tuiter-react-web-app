@@ -43,7 +43,7 @@ export default [
     },
     {
         name: "Profile",
-        href: "#",
+        href: "/tuiter/profile",
         icon: "fa-solid fa-user",
     },
     {

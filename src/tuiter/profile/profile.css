@@ -1,0 +1,99 @@
+.wd-profile-top-bar {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f7f9fa;
+    display: flex;
+    align-items: center;
+}
+
+.wd-profile-arrow {
+    padding: 8px 32px 8px 20px;
+}
+
+.wd-profile-large-username {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.wd-profile-top-bar-tweets {
+    font-size: 12px;
+    font-weight: normal;
+    color: #677782;
+}
+
+.wd-profile-banner-container{
+    width: 100%;
+    aspect-ratio: 3;
+    overflow: clip;
+}
+
+.wd-profile-banner {
+    width: 100%;
+    background-color: #4b5157;
+}
+
+.wd-profile-avatar-bar {
+    width: 100%;
+    position: relative;
+}
+
+.wd-profile-avatar {
+    border-radius: 100px;
+    width: 25%;
+    aspect-ratio: 1;
+    background-color: cadetblue;
+    margin-top: -15%;
+    margin-left: 5%;
+}
+
+.wd-profile-edit-button {
+    right: 16px;
+    bottom: 8px;
+    position: absolute;
+    background-color: white;
+    border-color: #d4dde1;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-size: 14px;
+}
+
+.wd-profile-name-container {
+    padding-top: 12px;
+}
+
+.wd-profile-username {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.wd-profile-handle {
+    font-size: 14px;
+    color: #677782;
+}
+
+.wd-profile-description {
+    font-size: 14px;
+    padding-top: 12px;
+}
+
+.wd-profile-location-and-date {
+    font-size: 14px;
+    color: #5e6f7a;
+    padding-top: 8px;
+}
+
+.wd-profile-followings {
+    font-size: 12px;
+    color: #5e6f7a;
+    padding-top: 8px;
+}
+
+.wd-profile-followings-number{
+    font-weight: 700;
+    padding-right: 4px;
+}
+
+.wd-profile-followings-text{
+    padding-right: 16px;
+}

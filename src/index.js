@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {
+    faArrowLeft,
     faArrowUpFromBracket,
     faBell, faBookmark,
     faCircleCheck, faComment, faEllipsis,
@@ -16,7 +17,7 @@ import {
 import {faComment as faComment2, faHeart as faHeart2} from "@fortawesome/free-regular-svg-icons"
 import {faTwitter} from "@fortawesome/free-brands-svg-icons";
 
-library.add(faCircleCheck, faRetweet, faHouseChimney, faTwitter, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsis, faFlask, faComment, faComment2, faHeart, faHeart2, faArrowUpFromBracket)
+library.add(faCircleCheck, faRetweet, faHouseChimney, faTwitter, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsis, faFlask, faComment, faComment2, faHeart, faHeart2, faArrowUpFromBracket, faArrowLeft)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,10 +1,8 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
 import items from "./navigationItems.js"
 import getNavigationItem from "./getNavigationItem.js";
 
-// TODO: refract this to components
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
