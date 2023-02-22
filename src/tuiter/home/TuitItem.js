@@ -1,5 +1,5 @@
 import React from "react";
-import "../home/index.css";
+import "./index.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useDispatch} from "react-redux";
 import {deleteTuit} from "../reducers/homeTuitsReducer.js";
@@ -175,7 +175,7 @@ const TuitItem = ({item}) => {
 
                 {item.showThisThread &&
                     <div>
-                        <a href="#/" className="wd-home-show-this-thread">Show this thread</a>
+                        <a href="src/tuiter/tuits#/" className="wd-home-show-this-thread">Show this thread</a>
                     </div>
                 }
             </div>

@@ -8,7 +8,7 @@ import whoReducer
 import {configureStore}
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-import tuitsReducer from "./tuits/tuits-reducer";
+import tuitsReducer from "./reducers/tuits-reducer.js";
 import homeTuitsReducer from "./reducers/homeTuitsReducer.js";
 
 const store = configureStore(
