@@ -3,7 +3,6 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
-import PostSummaryList from "./post-summary-list/index.js";
 
 function Tuiter() {
     return (
