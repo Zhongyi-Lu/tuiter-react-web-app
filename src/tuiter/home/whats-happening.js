@@ -6,7 +6,11 @@ const WhatsHappening = () => {
     const [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
-        dispatch(addTuit(whatsHappening))
+        const newTuit = {
+            tuit: whatsHappening
+        }
+        dispatch(addTuit(newTuit));
+        setWhatsHappening('');
     }
     return (
         <div className="row">

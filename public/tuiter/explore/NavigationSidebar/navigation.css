@@ -23,7 +23,7 @@
 
 .wd-nav-gray-background {
     background-color: #222222 !important;
-    color: white !important;
+    /*color: white !important;*/
 }
 
 .wd-nav-gray-background :hover {
@@ -41,6 +41,6 @@
     background-color: #18a0d3 !important;
 }
 
-.wd-nav-tweet-button:hover {
-    background-color: #1788b3 !important;
-}
+/*.wd-nav-tweet-button:hover {*/
+/*    background-color: #1788b3 !important;*/
+/*}*/

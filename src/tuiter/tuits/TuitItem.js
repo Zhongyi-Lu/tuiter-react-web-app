@@ -154,14 +154,14 @@ const TuitItem = ({item}) => {
                         </div>
                     </div>
 
-                    <div className="wd-home-counter-box" style={{color: item.retuited ? '#00b97f' : 'inherent'}}>
+                    <div className="wd-home-counter-box" style={{color: item.retuited ? '#00b97f' : 'black'}}>
                         <FontAwesomeIcon icon="fa-solid fa-retweet"/>
                         <div className="wd-home-counter-text">
                             {item.retuits > 0 ? item.retuits : ''}
                         </div>
                     </div>
 
-                    <div className="wd-home-counter-box" style={{color: item.liked ? '#fc217f' : 'inherent'}}>
+                    <div className="wd-home-counter-box" style={{color: item.liked ? '#fc217f' : "black"}}>
                         {item.liked ?
                             <FontAwesomeIcon icon="fa-solid fa-heart"/>
                             : <FontAwesomeIcon icon="fa-regular fa-heart"/>

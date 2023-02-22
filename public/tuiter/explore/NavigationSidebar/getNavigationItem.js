@@ -14,8 +14,8 @@ const getNavigationItem = (item) => {
         `)
     } else {
         return (`
-<div class="wd-nav-gray-background">
-        <div class="list-group-item list-group-item-action wd-nav-gray-background">
+<!--<div class="wd-nav-gray-background">-->
+        <div class="list-group-item list-group-item-action">
             <a href="${item.href}" class="wd-nav-link-text">
                 <div class="wd-nav-left-panel-container">
                     <div class="wd-nav-left-panel-icon">
@@ -25,7 +25,7 @@ const getNavigationItem = (item) => {
                 </div>
             </a>
         </div>
-</div>
+<!--</div>-->
 `)
     }
 };
