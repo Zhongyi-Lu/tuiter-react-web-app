@@ -122,15 +122,19 @@ body {
 }
 
 .wd-home-counter-text {
-    color: rgb(111, 120, 128);
     margin-left: 12px;
 }
 
 .wd-home-counter-box {
     display: flex;
-    padding: 12px;
+    padding-top: 12px;
     flex: 1;
     align-items: center
+}
+
+.wd-home-tweet-icon-button{
+    border-width: 0px;
+    background-color: inherit;
 }
 
 .wd-home-retweet-body-container{
