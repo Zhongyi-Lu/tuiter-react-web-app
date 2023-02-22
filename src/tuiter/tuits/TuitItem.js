@@ -150,14 +150,14 @@ const TuitItem = ({item}) => {
                             <FontAwesomeIcon icon="fa-regular fa-comment"/>
                         </button>
                         <div className="wd-home-counter-text">
-                            {item.replies}
+                            {item.replies > 0 ? item.replies : ''}
                         </div>
                     </div>
 
                     <div className="wd-home-counter-box" style={{color: item.retuited ? '#00b97f' : 'inherent'}}>
                         <FontAwesomeIcon icon="fa-solid fa-retweet"/>
                         <div className="wd-home-counter-text">
-                            {item.retuits}
+                            {item.retuits > 0 ? item.retuits : ''}
                         </div>
                     </div>
 
@@ -167,12 +167,12 @@ const TuitItem = ({item}) => {
                             : <FontAwesomeIcon icon="fa-regular fa-heart"/>
                         }
                         <div className="wd-home-counter-text">
-                            {item.likes}
+                            {item.likes > 0 ? item.likes : ''}
                         </div>
                     </div>
 
                     <div className="wd-home-counter-box">
-                        <FontAwesomeIcon icon="fa-solid fa-arrow-up-from-bracket" />
+                        <FontAwesomeIcon icon="fa-solid fa-arrow-up-from-bracket"/>
                     </div>
 
                 </div>
