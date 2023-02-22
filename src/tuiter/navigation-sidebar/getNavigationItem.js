@@ -20,7 +20,7 @@ const getNavigationItem = ({item, isActive}) => {
     } else {
         return (
             <div className="wd-nav-gray-background">
-                <div className="list-group-item list-group-item-action wd-nav-gray-background">
+                <div className="list-group-item list-group-item-action">
                     <a href={item.href} className="wd-nav-link-text">
                         <div className="wd-nav-left-panel-container">
                             <div className="wd-nav-left-panel-icon">
