@@ -45,6 +45,7 @@ export default [
         name: "Profile",
         href: "/tuiter/profile",
         icon: "fa-solid fa-user",
+        hrefName: "profile"
     },
     {
         name: "More",

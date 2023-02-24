@@ -12,13 +12,12 @@ import {
     faEnvelope, faFlask,
     faHashtag, faHeart,
     faHouseChimney, faList, faLocationDot,
-    faRetweet, faUser
+    faRetweet, faUser, faXmark
 } from "@fortawesome/free-solid-svg-icons";
 import {faComment as faComment2, faHeart as faHeart2, faCalendar} from "@fortawesome/free-regular-svg-icons"
 import {faTwitter} from "@fortawesome/free-brands-svg-icons";
 
-library.add(faCircleCheck, faRetweet, faHouseChimney, faTwitter, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsis, faFlask, faComment, faComment2, faHeart, faHeart2, faArrowUpFromBracket, faArrowLeft, faLocationDot, faCalendar, faCalendarDays)
-
+library.add(faCircleCheck, faRetweet, faHouseChimney, faTwitter, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsis, faFlask, faComment, faComment2, faHeart, faHeart2, faArrowUpFromBracket, faArrowLeft, faLocationDot, faCalendar, faCalendarDays, faXmark)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>

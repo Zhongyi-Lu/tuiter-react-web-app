@@ -35,7 +35,9 @@ const ProfileComponent = () => {
                     <img src={user.bannerPicture} className="wd-profile-avatar"/>
                 </div>
 
-                <input type="button" value="Edit profile" className="wd-profile-edit-button"/>
+                {/*TODO: not working*/}
+                <input type="button" value="Edit profile" className="wd-profile-edit-button"
+                       onclick="window.location.href='edit-profile'"/>
 
             </div>
         </div>
