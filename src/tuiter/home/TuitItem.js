@@ -149,8 +149,8 @@ const TuitItem = ({item}) => {
                 }
 
                 <div className="wd-home-counter-container">
-                    <div className="wd-home-counter-box">
-                        <div role="button" className="wd-home-tweet-icon-button">
+                    <div className="wd-home-counter-box" role="button">
+                        <div className="wd-home-tweet-icon-button">
                             <FontAwesomeIcon icon="fa-regular fa-comment"/>
                         </div>
                         <div className="wd-home-counter-text">
@@ -158,28 +158,27 @@ const TuitItem = ({item}) => {
                         </div>
                     </div>
 
-                    <div className="wd-home-counter-box" style={{color: item.retweeted ? '#00b97f' : 'black'}}>
-                        <div role="button" onClick={() => onClickRetweetIcon(item._id)}>
-                            <FontAwesomeIcon icon="fa-solid fa-retweet"/>
-                        </div>
+                    <div className="wd-home-counter-box" style={{color: item.retweeted ? '#00b97f' : 'black'}}
+                         role="button" onClick={() => onClickRetweetIcon(item._id)}>
+                        <FontAwesomeIcon icon="fa-solid fa-retweet"/>
+
                         <div className="wd-home-counter-text">
                             {item.retuits > 0 ? item.retuits : ''}
                         </div>
                     </div>
 
-                    <div className="wd-home-counter-box" style={{color: item.liked ? '#fc217f' : "black"}}>
-                        <div role="button" onClick={() => onClickLikedIcon(item._id)}>
-                            {item.liked ?
-                                <FontAwesomeIcon icon="fa-solid fa-heart"/>
-                                : <FontAwesomeIcon icon="fa-regular fa-heart"/>
-                            }
-                        </div>
+                    <div className="wd-home-counter-box" style={{color: item.liked ? '#fc217f' : "black"}}
+                         role="button" onClick={() => onClickLikedIcon(item._id)}>
+                        {item.liked ?
+                            <FontAwesomeIcon icon="fa-solid fa-heart"/>
+                            : <FontAwesomeIcon icon="fa-regular fa-heart"/>
+                        }
                         <div className="wd-home-counter-text">
                             {item.likes > 0 ? item.likes : ''}
                         </div>
                     </div>
 
-                    <div className="wd-home-counter-box">
+                    <div className="wd-home-counter-box" role="button">
                         <FontAwesomeIcon icon="fa-solid fa-arrow-up-from-bracket"/>
                     </div>
 
