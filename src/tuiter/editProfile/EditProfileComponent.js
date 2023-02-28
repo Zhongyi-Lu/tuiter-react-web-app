@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import "./edit-profile.css"
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
+import {editUser} from "../reducers/user-reducer.js";
+import {useNavigate} from 'react-router-dom';
 
 const InputComponent = ({item}) => {
     const handleChange = (event) => {
@@ -26,15 +27,24 @@ const InputComponent = ({item}) => {
 }
 
 
-
 const EditProfileComponent = () => {
     const user = useSelector((state) => state.user);
 
     const [name, setName] = useState(`${user.firstName} ${user.lastName}`);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const onClickSaveButton = () => {
-        user.firstName = name.split(" ")[0];
-        user.lastName = name.split(" ")[1];
+        dispatch(editUser({
+            firstName: name.split(" ")[0],
+            lastName: name.slice(name.indexOf(" ") + 1),
+            bio: bio,
+            location: location,
+            website: website,
+            dateOfBirth: user.dateOfBirth,
+            dateJoined: user.dateJoined,
+        }))
+        navigate("../profile");
     }
 
     const nameItem = {
@@ -66,18 +76,22 @@ const EditProfileComponent = () => {
 
     return <div>
         <div className="wd-edit-profile-top-bar">
-            <div className="wd-edit-profile-arrow">
+            <div className="wd-edit-profile-arrow"
+                 onClick={() => {
+                     navigate("../profile");
+                 }
+                 }>
                 <a href="./profile" className="wd-edit-profile-arrow-href"><FontAwesomeIcon
                     icon="fa-solid fa-xmark"/></a>
             </div>
             <div>
-                <div className="wd-edit-profile-large-username">
+                <div className="wd-edit-profile-large-username"
+                >
                     Edit profile
                 </div>
             </div>
             <input type="button" value="Save" className="wd-edit-profile-save-button"
                    onClick={() => onClickSaveButton()}/>
-
         </div>
 
         <div>

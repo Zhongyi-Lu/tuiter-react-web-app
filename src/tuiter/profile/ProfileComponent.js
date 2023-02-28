@@ -2,10 +2,13 @@ import React from "react";
 import "./profile.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useSelector} from "react-redux";
+import {useNavigate} from "react-router-dom";
 
 const ProfileComponent = () => {
     const user = useSelector(
         (state) => state.user);
+
+    const navigate = useNavigate();
 
     return <div>
         <div className="wd-profile-top-bar">
@@ -35,10 +38,11 @@ const ProfileComponent = () => {
                     <img src={user.bannerPicture} className="wd-profile-avatar"/>
                 </div>
 
-                {/*TODO: not working*/}
                 <input type="button" value="Edit profile" className="wd-profile-edit-button"
-                       onclick="window.location.href='edit-profile'"/>
-
+                       onClick={() => {
+                           navigate("../edit-profile");
+                       }
+                       }/>
             </div>
         </div>
 
