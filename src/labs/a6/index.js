@@ -12,7 +12,6 @@ function Assignment6() {
             <ConditionalOutput/>
             <Styles/>
             <Classes/>
-            <TodoItem/>
             <TodoList/>
         </div>
     );
