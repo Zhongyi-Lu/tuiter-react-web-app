@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/homeTuitsReducer.js";
+import {deleteTuit, flipLiked, flipRetweeted} from "../reducers/homeTuitsReducer.js";
 
 const RetweetBody = ({item}) => {
     return <div className="wd-home-sub-container-b">
@@ -47,6 +47,14 @@ const TuitItem = ({item}) => {
         dispatch(deleteTuit(id));
     }
 
+    function onClickLikedIcon(id) {
+        dispatch(flipLiked(id));
+    }
+
+    function onClickRetweetIcon(id) {
+        dispatch(flipRetweeted(id));
+    }
+
     return <div className="wd-home-sub-container-a">
         {item.retweetUserName !== undefined &&
             <div className="wd-home-retweet-container">
@@ -83,7 +91,7 @@ const TuitItem = ({item}) => {
                         </div>
 
                         <div className="wd-home-three-dots">
-                            <i className="bi bi-x-lg float-end"
+                            <i className="bi bi-x-lg float-end" role="button"
                                onClick={() => deleteTuitHandler(item._id)}></i>
                         </div>
 
@@ -142,26 +150,30 @@ const TuitItem = ({item}) => {
 
                 <div className="wd-home-counter-container">
                     <div className="wd-home-counter-box">
-                        <button className="wd-home-tweet-icon-button">
+                        <div role="button" className="wd-home-tweet-icon-button">
                             <FontAwesomeIcon icon="fa-regular fa-comment"/>
-                        </button>
+                        </div>
                         <div className="wd-home-counter-text">
                             {item.replies > 0 ? item.replies : ''}
                         </div>
                     </div>
 
-                    <div className="wd-home-counter-box" style={{color: item.retuited ? '#00b97f' : 'black'}}>
-                        <FontAwesomeIcon icon="fa-solid fa-retweet"/>
+                    <div className="wd-home-counter-box" style={{color: item.retweeted ? '#00b97f' : 'black'}}>
+                        <div role="button" onClick={() => onClickRetweetIcon(item._id)}>
+                            <FontAwesomeIcon icon="fa-solid fa-retweet"/>
+                        </div>
                         <div className="wd-home-counter-text">
                             {item.retuits > 0 ? item.retuits : ''}
                         </div>
                     </div>
 
                     <div className="wd-home-counter-box" style={{color: item.liked ? '#fc217f' : "black"}}>
-                        {item.liked ?
-                            <FontAwesomeIcon icon="fa-solid fa-heart"/>
-                            : <FontAwesomeIcon icon="fa-regular fa-heart"/>
-                        }
+                        <div role="button" onClick={() => onClickLikedIcon(item._id)}>
+                            {item.liked ?
+                                <FontAwesomeIcon icon="fa-solid fa-heart"/>
+                                : <FontAwesomeIcon icon="fa-regular fa-heart"/>
+                            }
+                        </div>
                         <div className="wd-home-counter-text">
                             {item.likes > 0 ? item.likes : ''}
                         </div>
