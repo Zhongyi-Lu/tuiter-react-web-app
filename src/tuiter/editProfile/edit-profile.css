@@ -134,3 +134,15 @@
     justify-content: center;
     align-items: center;
 }
+
+.wd-edit-profile-icon-container {
+    width: 36px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    opacity: 0.5;
+    border-radius: 200px;
+    color: white;
+}

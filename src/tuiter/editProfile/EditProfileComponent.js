@@ -25,10 +25,18 @@ const InputComponent = ({item}) => {
 
 }
 
+
+
 const EditProfileComponent = () => {
     const user = useSelector((state) => state.user);
 
     const [name, setName] = useState(`${user.firstName} ${user.lastName}`);
+
+    const onClickSaveButton = () => {
+        user.firstName = name.split(" ")[0];
+        user.lastName = name.split(" ")[1];
+    }
+
     const nameItem = {
         textareaValue: name,
         setTextareaValue: setName,
@@ -59,7 +67,7 @@ const EditProfileComponent = () => {
     return <div>
         <div className="wd-edit-profile-top-bar">
             <div className="wd-edit-profile-arrow">
-                <a href="./exploreScreen" className="wd-edit-profile-arrow-href"><FontAwesomeIcon
+                <a href="./profile" className="wd-edit-profile-arrow-href"><FontAwesomeIcon
                     icon="fa-solid fa-xmark"/></a>
             </div>
             <div>
@@ -67,15 +75,25 @@ const EditProfileComponent = () => {
                     Edit profile
                 </div>
             </div>
-            <input type="button" value="Save" className="wd-edit-profile-save-button"/>
+            <input type="button" value="Save" className="wd-edit-profile-save-button"
+                   onClick={() => onClickSaveButton()}/>
+
         </div>
 
         <div>
             <div className="wd-edit-profile-banner-container">
                 <img src={user.profilePicture} style={{width: '100%', overflow: "clip"}}/>
                 <div className="wd-edit-profile-centered-text">
-                    <div>
-                        Camera icon
+                    {/*camera icon*/}
+                    <div className="wd-edit-profile-icon-container" role="button">
+                        <FontAwesomeIcon icon="fa-solid fa-camera"/>
+                    </div>
+
+                    <div style={{paddingRight: 20}}/>
+
+                    {/*x mark icon*/}
+                    <div className="wd-edit-profile-icon-container" role="button">
+                        <FontAwesomeIcon icon="fa-solid fa-xmark"/>
                     </div>
                 </div>
             </div>
@@ -86,8 +104,8 @@ const EditProfileComponent = () => {
                 <div className="wd-edit-profile-avatar">
                     <img src={user.bannerPicture} style={{width: '100%'}}/>
                     <div className="wd-edit-profile-centered-text">
-                        <div>
-                            Camera icon
+                        <div className="wd-edit-profile-icon-container" role="button">
+                            <FontAwesomeIcon icon="fa-solid fa-camera"/>
                         </div>
                     </div>
                 </div>
