@@ -6,10 +6,12 @@ const ExploreComponent = () => {
     return (
         <div>
             <div className="row">
-                <div className="col-11 position-relative">
+                <div className="col-11 position-relative wd-search-bar-container">
                     <input placeholder="Search Tuiter"
                            className="form-control rounded-pill ps-5"/>
-                    <i className="bi bi-search position-absolute wd-nudge-up"/>
+                    {/*<div className="wd-floating">*/}
+                        <i className="bi bi-search wd-search-icon"/>
+                    {/*</div>*/}
                 </div>
                 <a href="#/" className="col-1">
                     <i className="wd-bottom-4 text-primary float-end bi

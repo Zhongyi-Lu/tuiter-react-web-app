@@ -11,6 +11,17 @@
     padding-bottom: 20px;
 }
 
+.wd-search-icon{
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translate(-50%, -50%);
+}
+
+.wd-search-bar-container{
+    height: 40px;
+}
+
 .wd-nudge-up {
     bottom: 18px;
     left: 25px;
