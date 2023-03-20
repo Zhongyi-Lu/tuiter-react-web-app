@@ -1,17 +1,25 @@
-import React from "react";
+import React, {useEffect} from "react";
 import TuitItem from "./TuitItem.js";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {findTuitsThunk}
+  from "../../services/tuits-thunks";
 
 
-const TuitList = () => {
-    const homeTuitArray = useSelector((state) => state.homeTuits);
-    if (homeTuitArray.length > 0)
-        return <div className="wd-home-great-container">
-            {homeTuitArray.map((item) => <TuitItem item={item}/>)}
-        </div>
-    else {
-        return <></>
+const TuitsList = () => {
+  const {tuits, loading} = useSelector(
+    state => state.tuitsData)
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(findTuitsThunk())
+  }, []);
+
+  return <div className="wd-home-great-container">
+
+    {loading
+      ? <div>Loading...</div>
+      : tuits.map((item) => <TuitItem item={item}/>)
     }
+  </div>
 }
 
-export default TuitList;
+export default TuitsList;

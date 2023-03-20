@@ -3,6 +3,7 @@ import "./index.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useDispatch} from "react-redux";
 import {deleteTuit, flipLiked, flipRetweeted} from "../reducers/homeTuitsReducer.js";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const RetweetBody = ({item}) => {
     return <div className="wd-home-sub-container-b">
@@ -44,7 +45,7 @@ const RetweetBody = ({item}) => {
 const TuitItem = ({item}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     function onClickLikedIcon(id) {
