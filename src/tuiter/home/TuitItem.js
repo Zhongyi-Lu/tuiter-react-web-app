@@ -26,7 +26,7 @@ const RetweetBody = ({item}) => {
                             <FontAwesomeIcon icon="fa-solid fa-circle-check"/>
                         </span>
             <span className="wd-home-userhandle-text">
-                            @{item.handle} · {item.time}
+                            {item.handle} · {item.time}
                         </span>
           </div>
 
@@ -58,8 +58,14 @@ const TuitItem = ({item}) => {
     }))
   }
 
-  function onClickRetweetIcon(id) {
-    dispatch(flipRetweeted(id));
+  function onClickRetweetIcon(tuit) {
+    // dispatch(flipRetweeted(id));
+    const changeRetweets = tuit.retuited ? -1 : 1;
+    dispatch(updateTuitThunk({
+      ...tuit,
+      retuited: !tuit.retuited,
+      retuits: tuit.retuits === undefined ? 1 : tuit.retuits + changeRetweets,
+    }))
   }
 
   return <div className="wd-home-sub-container-a">
@@ -165,8 +171,8 @@ const TuitItem = ({item}) => {
             </div>
           </div>
 
-          <div className="wd-home-counter-box" style={{color: item.retweeted ? '#00b97f' : 'black'}}
-               role="button" onClick={() => onClickRetweetIcon(item._id)}>
+          <div className="wd-home-counter-box" style={{color: item.retuited ? '#00b97f' : 'black'}}
+               role="button" onClick={() => onClickRetweetIcon(item)}>
             <FontAwesomeIcon icon="fa-solid fa-retweet"/>
 
             <div className="wd-home-counter-text">
