@@ -61,6 +61,7 @@
     padding: 4px 16px;
     font-size: 14px;
     font-weight: 500;
+    border-style: solid;
 }
 
 .wd-profile-name-container {
@@ -101,7 +102,7 @@
 }
 
 .wd-profile-followings {
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 8px;
 }
 

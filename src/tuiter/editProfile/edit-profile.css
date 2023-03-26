@@ -61,13 +61,17 @@
 .wd-edit-profile-input-filedset {
     border: 1px solid #dce3e7;
     border-radius: 4px;
-    padding: 8px;
+    /*padding: 8px;*/
+    position: relative;
 }
 
 .wd-edit-profile-input-title {
     font-size: 14px;
     color: #6e7d87;
     margin-left: 2px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
 }
 
 .wd-edit-profile-input-textarea {
@@ -75,13 +79,8 @@
     width: 100%;
     resize: none;
     overflow: auto;
-}
-
-.wd-edit-profile-input-textarea:focus-visible {
-    border-width: 0px;
-    width: 100%;
-    resize: none;
-    overflow: auto;
+    padding-top: 28px;
+    padding-left: 10px;
 }
 
 .wd-edit-profile-website-input {
@@ -101,6 +100,7 @@
     position: absolute;
     right: 12px;
     font-weight: 600;
+    border-style: solid;
 }
 
 .wd-edit-profile-dateofbirth {

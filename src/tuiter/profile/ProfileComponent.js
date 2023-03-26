@@ -10,6 +10,18 @@ const ProfileComponent = () => {
 
     const navigate = useNavigate();
 
+    const formatDate = (date) => {
+        const parts =date.split('-');
+
+        const mydate = new Date(parts[0], parts[1] - 1, parts[2]);
+
+        const month = mydate.toLocaleString('default', {month: 'long'});
+        const day = mydate.getDate();
+        const year = mydate.getFullYear();
+        return `${month} ${day}, ${year}`;
+    }
+
+
     return <div>
         <div className="wd-profile-top-bar">
             <div className="wd-profile-arrow">
@@ -76,7 +88,7 @@ const ProfileComponent = () => {
                         Born
                     </span>
                     <span className="wd-profile-location-and-date-text">
-                        {user.dateOfBirth}
+                        {formatDate(user.dateOfBirth)}
                 </span>
                 </span>
 

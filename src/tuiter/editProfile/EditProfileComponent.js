@@ -11,7 +11,7 @@ const InputComponent = ({item}) => {
     };
 
     return (
-        <fieldset className="wd-edit-profile-input-filedset">
+        <div className="wd-edit-profile-input-filedset">
             <legend className="wd-edit-profile-input-title">{item.title}</legend>
             <textarea
                 id="textarea"
@@ -21,9 +21,20 @@ const InputComponent = ({item}) => {
                 onChange={handleChange}
                 className="wd-edit-profile-input-textarea"
             />
-        </fieldset>
+        </div>
     );
 
+}
+
+const formatDate = (date) => {
+    const parts =date.split('-');
+
+    const mydate = new Date(parts[0], parts[1] - 1, parts[2]);
+
+    const month = mydate.toLocaleString('default', {month: 'long'});
+    const day = mydate.getDate();
+    const year = mydate.getFullYear();
+    return `${month} ${day}, ${year}`;
 }
 
 
@@ -34,18 +45,7 @@ const EditProfileComponent = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const onClickSaveButton = () => {
-        dispatch(editUser({
-            firstName: name.split(" ")[0],
-            lastName: name.slice(name.indexOf(" ") + 1),
-            bio: bio,
-            location: location,
-            website: website,
-            dateOfBirth: user.dateOfBirth,
-            dateJoined: user.dateJoined,
-        }))
-        navigate("../profile");
-    }
+
 
     const nameItem = {
         textareaValue: name,
@@ -73,6 +73,29 @@ const EditProfileComponent = () => {
 
 
     const [website, setWebsite] = useState(`${user.website}`)
+
+    const [showDateEdit, setShowDateEdit] = useState(false);
+    const [dateOfBirth, setDateOfBirth] = useState(`${user.dateOfBirth}`);
+
+    function handleEditClick() {
+        setShowDateEdit(!showDateEdit);
+    }
+    const onClickSaveButton = () => {
+      dispatch(editUser({
+        firstName: name.split(" ")[0],
+        lastName: name.slice(name.indexOf(" ") + 1),
+        bio: bio,
+        location: location,
+        website: website,
+        dateOfBirth: dateOfBirth,
+        dateJoined: user.dateJoined,
+      }))
+      navigate("../profile");
+    }
+
+    function handleDateChange(event) {
+        setDateOfBirth(event.target.value);
+    }
 
     return <div>
         <div className="wd-edit-profile-top-bar">
@@ -152,11 +175,19 @@ const EditProfileComponent = () => {
 
             <div className="wd-edit-profile-birthdate-text">
                 <span>Birth Date · </span>
-                <span><a href="#" className="wd-edit-profile-href-without-underline">Edit</a></span>
+                <span><a href="#" className="wd-edit-profile-href-without-underline" onClick={handleEditClick}>
+                    {showDateEdit ? "Done" : "Edit"}
+                </a></span>
             </div>
+          {!showDateEdit &&
             <div className="wd-edit-profile-dateofbirth">
-                {user.dateOfBirth}
+                {formatDate(dateOfBirth)}
             </div>
+          }
+          {showDateEdit &&
+            <input type="date" value={dateOfBirth}
+              onChange={handleDateChange}/>
+          }
         </div>
 
         <div className="wd-edit-profile-professional">
