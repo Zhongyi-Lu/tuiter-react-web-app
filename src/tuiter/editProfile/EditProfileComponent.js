@@ -26,14 +26,14 @@ const InputComponent = ({item}) => {
 
 }
 
-const formatDate = (date) => {
-    const parts =date.split('-');
+const formatDate = (dateString) => {
+    const parts = dateString.split('-');
 
-    const mydate = new Date(parts[0], parts[1] - 1, parts[2]);
+    const date = new Date(parts[0], parts[1] - 1, parts[2]);
 
-    const month = mydate.toLocaleString('default', {month: 'long'});
-    const day = mydate.getDate();
-    const year = mydate.getFullYear();
+    const month = date.toLocaleString('default', {month: 'long'});
+    const day = date.getDate();
+    const year = date.getFullYear();
     return `${month} ${day}, ${year}`;
 }
 

@@ -8,9 +8,9 @@ function Labs() {
         <div>
             <Nav/>
             <Routes>
-                <Route path="/*"
+                <Route path="a6"
                        element={<Assignment6/>}/>
-                <Route path="a7"
+                <Route path="/*"
                        element={<Assignment7/>}/>
             </Routes>
         </div>

@@ -5,7 +5,7 @@ const initUser = {
     profilePicture: '/images/hot-Top-trending-niche-JS-Frameworks.png',
     bannerPicture: '/images/reactjs_logo.png',
     bio: 'Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.',
-    website: 'youtube.com/webdevtv',
+    website: '',
     location: 'Boston, MA',
     dateOfBirth: '1968-07-07',
     dateJoined: 'April 2009',
