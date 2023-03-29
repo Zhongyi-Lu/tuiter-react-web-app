@@ -9,7 +9,7 @@ const RetweetBody = ({item}) => {
   return <div className="wd-home-sub-container-b">
     <div className="wd-home-image-box">
       <img className="wd-home-small-image" alt="small"
-           src={item.icon}/>
+           src={`/images/${item.image}`}/>
     </div>
 
 
@@ -82,7 +82,7 @@ const TuitItem = ({item}) => {
 
       <div className="wd-home-image-box">
         <img className="wd-home-small-image" alt="small"
-             src={item.icon}/>
+             src={`/images/${item.image}`}/>
       </div>
 
 
