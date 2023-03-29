@@ -17,7 +17,7 @@ const WhatsHappening = () => {
       time: '1m',
       userName: 'Nasa',
       handle: 'nasa',
-      icon: '/images/nasa.jpg',
+      image: 'nasa.jpg',
     }
     dispatch(createTuitThunk(newTuit));
     setWhatsHappening('');
