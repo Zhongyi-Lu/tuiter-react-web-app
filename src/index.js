@@ -5,23 +5,34 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {
-    faArrowLeft,
-    faArrowUpFromBracket,
-    faBell, faBookmark, faCalendarDays,
-    faCircleCheck, faComment, faEllipsis,
-    faEnvelope, faFlask,
-    faHashtag, faHeart,
-    faHouseChimney, faList, faLocationDot,
-    faRetweet, faUser, faXmark, faCamera, faCameraRetro
+  faArrowLeft,
+  faArrowUpFromBracket,
+  faBell, faBookmark, faCalendarDays,
+  faCircleCheck, faComment, faEllipsis,
+  faEnvelope, faFlask,
+  faHashtag, faHeart,
+  faHouseChimney, faList, faLocationDot,
+  faRetweet, faUser, faXmark, faCamera, faCameraRetro,
+  faThumbsDown
 } from "@fortawesome/free-solid-svg-icons";
-import {faComment as faComment2, faHeart as faHeart2, faCalendar} from "@fortawesome/free-regular-svg-icons"
+import {
+  faComment as faComment2,
+  faHeart as faHeart2,
+  faCalendar,
+  faThumbsDown as faThumbsDown2
+} from "@fortawesome/free-regular-svg-icons"
 import {faTwitter} from "@fortawesome/free-brands-svg-icons";
 
-library.add(faCircleCheck, faRetweet, faHouseChimney, faTwitter, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsis, faFlask, faComment, faComment2, faHeart, faHeart2, faArrowUpFromBracket, faArrowLeft, faLocationDot, faCalendar, faCalendarDays, faXmark, faCamera, faCameraRetro)
+library.add(faCircleCheck, faRetweet, faHouseChimney, faTwitter,
+  faHashtag, faBell, faEnvelope, faBookmark, faList, faUser,
+  faEllipsis, faFlask, faComment, faComment2, faHeart, faHeart2,
+  faArrowUpFromBracket, faArrowLeft, faLocationDot, faCalendar,
+  faCalendarDays, faXmark, faCamera, faCameraRetro, faThumbsDown,
+  faThumbsDown2);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-        <App/>
-    </React.StrictMode>
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>
 );
 

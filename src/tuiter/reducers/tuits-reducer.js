@@ -5,7 +5,7 @@ import {createTuitThunk, deleteTuitThunk, findTuitsThunk, updateTuitThunk}
 
 const initialState = {
   tuits: [],
-  loading: false
+  loading: true
 }
 
 const tuitsSlice = createSlice({

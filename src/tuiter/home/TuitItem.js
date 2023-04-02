@@ -68,6 +68,15 @@ const TuitItem = ({item}) => {
     }))
   }
 
+  function onClickDislikedIcon(item) {
+    const changeDislikes = item.disliked ? -1 : 1;
+    dispatch(updateTuitThunk({
+      ...item,
+      disliked: !item.disliked,
+      dislikes: item.dislikes === undefined ? 1 : item.dislikes + changeDislikes,
+    }))
+  }
+
   return <div className="wd-home-sub-container-a">
     {item.retweetUserName !== undefined &&
       <div className="wd-home-retweet-container">
@@ -188,6 +197,17 @@ const TuitItem = ({item}) => {
             }
             <div className="wd-home-counter-text">
               {item.likes > 0 ? item.likes : ''}
+            </div>
+          </div>
+
+          <div className="wd-home-counter-box" style={{color: item.disliked ? '#fc217f' : "black"}}
+               role="button" onClick={() => onClickDislikedIcon(item)}>
+            {item.disliked ?
+              <FontAwesomeIcon icon="fa-solid fa-thumbs-down"/>
+              : <FontAwesomeIcon icon="fa-regular fa-thumbs-down"/>
+            }
+            <div className="wd-home-counter-text">
+              {item.dislikes > 0 ? item.dislikes : ''}
             </div>
           </div>
 
